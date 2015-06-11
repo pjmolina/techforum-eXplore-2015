@@ -1,0 +1,25 @@
+<div class="row">
+	<div class="col-md-4"></div>
+	<div class="col-md-4">
+		<form class="form-vertical text-left" name="editForm">
+			<h3 class="text-center">Solution</h3>
+			<fieldset ng-show="dataReceived">
+				<div class="form-group">
+					<label for="valueCategory">Category</label>
+					<div id="valueCategory">{{solution.category}}</div>
+				</div>
+				<div class="form-group">
+					<label for="valueService">Service</label>
+					<div id="valueService">{{solution.service}}</div>
+				</div>
+				<div class="form-group">
+					<button class="btn btn-primary" ng-click="gotoList($event)" >Back</button>
+					<button class="btn btn-primary" ng-click="edit($event)" >Edit</button>
+				</div>
+			</fieldset>
+			<div ng-hide="dataReceived" class="loader"><img src="images/loader.gif" alt="Loading..." /></div>
+		</form>
+
+	</div>
+	<div class="col-md-4"></div>
+</div>
