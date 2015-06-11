@@ -1,0 +1,28 @@
+class Office
+{
+	string Name;
+	string Country;
+	string City;
+	string Address;
+	string Phone;
+	string ImageUrl;
+}
+class Country
+{
+	string Name;
+}
+class Solution
+{
+	string Category;
+	string Service;
+}
+class GeoOffices
+{
+	string Name;
+	string Country;
+	string City;
+	string Address;
+	string Phone;
+	geopoint Position;
+	string ImageUrl;
+}
