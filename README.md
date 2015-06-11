@@ -50,7 +50,8 @@ Material presented in **Worldline TechForum eXplore 2015** at Seclin, France, EU
 		- Ready to deploy on cloud infrastructure: heroku, IBM Bluemix, Cloudshare, localhost
 		- AngularJS Administrative UI 
 5. [RadarcOnline](https://www.radarconline.com) was used to create and generate an iOS and Android native mobile apps.
-   - See full source code at `src/ios` & `src/android` 
+   - See full source code at `src/ios` and `src/android` 
+   
 -----------------------------------
 
 ## More info:
