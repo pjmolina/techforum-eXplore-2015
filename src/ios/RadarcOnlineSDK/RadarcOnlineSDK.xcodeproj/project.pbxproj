@@ -1,0 +1,2064 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		9A2C5EA719E7EDD900D723E1 /* Headers */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9A2C5EA819E7EDD900D723E1 /* Build configuration list for PBXAggregateTarget "Headers" */;
+			buildPhases = (
+				9A2C5EAB19E7EDF100D723E1 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Headers;
+			productName = Headers;
+		};
+		9A2C5EAE19E7F02400D723E1 /* BuildLibrary */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9A2C5EB119E7F02400D723E1 /* Build configuration list for PBXAggregateTarget "BuildLibrary" */;
+			buildPhases = (
+				9A2C5EB419E7F03100D723E1 /* Run Script */,
+			);
+			dependencies = (
+				9ACE969619E80D33004488EB /* PBXTargetDependency */,
+				9A2C5EB319E7F02D00D723E1 /* PBXTargetDependency */,
+			);
+			name = BuildLibrary;
+			productName = BuildLibrary;
+		};
+		9AF572D919ED336E007EDD76 /* BuildLibraryDebug */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9AF572DA19ED336E007EDD76 /* Build configuration list for PBXAggregateTarget "BuildLibraryDebug" */;
+			buildPhases = (
+				9AF572DD19ED3372007EDD76 /* ShellScript */,
+			);
+			dependencies = (
+				9AF572E119ED337B007EDD76 /* PBXTargetDependency */,
+				9AF572DF19ED337B007EDD76 /* PBXTargetDependency */,
+			);
+			name = BuildLibraryDebug;
+			productName = BuildLibraryDebug;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		37A67CC4998E61F5DC3E4FB9 /* libPods-RadarcOnlineSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A9CC1FBE22D4CCCA3FB6C0 /* libPods-RadarcOnlineSDK.a */; };
+		5715188F1B0F4750003F242E /* NSDictionary+RO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5715188E1B0F4750003F242E /* NSDictionary+RO.m */; };
+		5715189C1B0F5F81003F242E /* ROModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5715189B1B0F47BF003F242E /* ROModel.h */; };
+		5715189D1B0F5F81003F242E /* NSDictionary+RO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5715188D1B0F4750003F242E /* NSDictionary+RO.h */; };
+		5715219C1AC7F828009F6118 /* ROListDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 571521991AC7F828009F6118 /* ROListDataLoader.m */; };
+		5715219D1AC7F828009F6118 /* ROSingleDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5715219B1AC7F828009F6118 /* ROSingleDataLoader.m */; };
+		5715219E1AC7F861009F6118 /* RODataLoader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 571521971AC7F828009F6118 /* RODataLoader.h */; };
+		5715219F1AC7F861009F6118 /* ROListDataLoader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 571521981AC7F828009F6118 /* ROListDataLoader.h */; };
+		571521A01AC7F861009F6118 /* ROSingleDataLoader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5715219A1AC7F828009F6118 /* ROSingleDataLoader.h */; };
+		571521A91AC7F969009F6118 /* ROHeaderCellDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 571521A41AC7F969009F6118 /* ROHeaderCellDescriptor.m */; };
+		571521AA1AC7F969009F6118 /* ROImageCellDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 571521A61AC7F969009F6118 /* ROImageCellDescriptor.m */; };
+		571521AB1AC7F969009F6118 /* ROTextCellDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 571521A81AC7F969009F6118 /* ROTextCellDescriptor.m */; };
+		571521AC1AC7FB93009F6118 /* ROCellDescriptor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 571521A21AC7F969009F6118 /* ROCellDescriptor.h */; };
+		571521AD1AC7FB93009F6118 /* ROHeaderCellDescriptor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 571521A31AC7F969009F6118 /* ROHeaderCellDescriptor.h */; };
+		571521AE1AC7FB93009F6118 /* ROImageCellDescriptor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 571521A51AC7F969009F6118 /* ROImageCellDescriptor.h */; };
+		571521AF1AC7FB93009F6118 /* ROTextCellDescriptor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 571521A71AC7F969009F6118 /* ROTextCellDescriptor.h */; };
+		571521B51AC7FCA8009F6118 /* ROCustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571521B21AC7FCA8009F6118 /* ROCustomTableViewController.m */; };
+		571521B61AC7FCA8009F6118 /* ROTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571521B41AC7FCA8009F6118 /* ROTableViewController.m */; };
+		571521B71AC7FCB5009F6118 /* ROCustomTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 571521B11AC7FCA8009F6118 /* ROCustomTableViewController.h */; };
+		571521B81AC7FCB5009F6118 /* ROTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 571521B31AC7FCA8009F6118 /* ROTableViewController.h */; };
+		571521BC1AC7FD00009F6118 /* ROChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571521BB1AC7FD00009F6118 /* ROChartViewController.m */; };
+		571521BD1AC7FD52009F6118 /* ROChartViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 571521BA1AC7FD00009F6118 /* ROChartViewController.h */; };
+		571521C11AC7FDB1009F6118 /* ROCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571521C01AC7FDB1009F6118 /* ROCollectionViewController.m */; };
+		571521C21AC7FDD2009F6118 /* ROCollectionViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 571521BF1AC7FDB1009F6118 /* ROCollectionViewController.h */; };
+		571B1F541B1496B3008591AD /* RORestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 571B1F531B1496B3008591AD /* RORestClient.m */; };
+		571B1F571B14BB6F008591AD /* ROAppNowDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 571B1F561B14BB6F008591AD /* ROAppNowDatasource.m */; };
+		571B1F581B14C72E008591AD /* RORestClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 571B1F521B1496B3008591AD /* RORestClient.h */; };
+		571B1F591B14C72E008591AD /* ROAppNowDatasource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 571B1F551B14BB6F008591AD /* ROAppNowDatasource.h */; };
+		571F44A71A8B681100A538B3 /* ROFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571F449B1A8B681100A538B3 /* ROFormViewController.m */; };
+		571F44A91A8B681100A538B3 /* ROOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571F449D1A8B681100A538B3 /* ROOptionsViewController.m */; };
+		571F44B31A8B71CD00A538B3 /* ROFormViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 571F449A1A8B681100A538B3 /* ROFormViewController.h */; };
+		571F44B41A8B71CD00A538B3 /* ROOptionsViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 571F449C1A8B681100A538B3 /* ROOptionsViewController.h */; };
+		571F44B61A8B73C000A538B3 /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 571F448A1A8B67A100A538B3 /* filter.png */; };
+		571F44B71A8B73C000A538B3 /* filter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 571F448B1A8B67A100A538B3 /* filter@2x.png */; };
+		571F44B81A8B73C000A538B3 /* filterClear.png in Resources */ = {isa = PBXBuildFile; fileRef = 571F448C1A8B67A100A538B3 /* filterClear.png */; };
+		571F44B91A8B73C000A538B3 /* filterClear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 571F448D1A8B67A100A538B3 /* filterClear@2x.png */; };
+		571F44BA1A8B73CC00A538B3 /* ROOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 571F44AE1A8B68FA00A538B3 /* ROOptionsViewController.xib */; };
+		573411001AC1E36D009F3888 /* UITableViewCell+RO.m in Sources */ = {isa = PBXBuildFile; fileRef = 573410FF1AC1E36D009F3888 /* UITableViewCell+RO.m */; };
+		573411011AC1E392009F3888 /* UITableViewCell+RO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 573410FE1AC1E36D009F3888 /* UITableViewCell+RO.h */; };
+		5762FB5F1AC1B9E700D50199 /* ROError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5762FB5C1AC1B9E700D50199 /* ROError.m */; };
+		5762FB601AC1B9E700D50199 /* ROErrorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5762FB5E1AC1B9E700D50199 /* ROErrorManager.m */; };
+		5762FB611AC1BA4700D50199 /* ROError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5762FB5B1AC1B9E700D50199 /* ROError.h */; };
+		5762FB621AC1BA4700D50199 /* ROErrorManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5762FB5D1AC1B9E700D50199 /* ROErrorManager.h */; };
+		577A4FFC19EA829700E7A638 /* NSBundle+RO.m in Sources */ = {isa = PBXBuildFile; fileRef = 577A4FFB19EA829700E7A638 /* NSBundle+RO.m */; };
+		577A500019EA84F300E7A638 /* UIImage+RO.m in Sources */ = {isa = PBXBuildFile; fileRef = 577A4FFF19EA84F300E7A638 /* UIImage+RO.m */; };
+		577A500219EA873200E7A638 /* NSBundle+RO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 577A4FFA19EA829700E7A638 /* NSBundle+RO.h */; };
+		577A500319EA873B00E7A638 /* UIImage+RO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 577A4FFE19EA84F300E7A638 /* UIImage+RO.h */; };
+		57822E821B0606B400C8F26E /* UIFont+RO.m in Sources */ = {isa = PBXBuildFile; fileRef = 57822E811B0606B300C8F26E /* UIFont+RO.m */; };
+		57822E861B061BF200C8F26E /* UIFont+RO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57822E801B0606B300C8F26E /* UIFont+RO.h */; };
+		57822E991B07841500C8F26E /* UILabel+RO.m in Sources */ = {isa = PBXBuildFile; fileRef = 57822E981B07841500C8F26E /* UILabel+RO.m */; };
+		57822E9C1B07847200C8F26E /* ROTextStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 57822E9B1B07847200C8F26E /* ROTextStyle.m */; };
+		57822E9D1B07849600C8F26E /* UILabel+RO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57822E971B07841500C8F26E /* UILabel+RO.h */; };
+		57822E9E1B07849600C8F26E /* ROTextStyle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57822E9A1B07847200C8F26E /* ROTextStyle.h */; };
+		578D95251A9F8F3400B2E9D0 /* UIImageView+RO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57D9F4FD1A9F8510001CBDB3 /* UIImageView+RO.h */; };
+		578D95261A9F8F3400B2E9D0 /* UIColor+RO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57D9F5011A9F8846001CBDB3 /* UIColor+RO.h */; };
+		57962A8B1AC93CD5005BE423 /* ROFilterBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 57962A801AC93CD5005BE423 /* ROFilterBehavior.m */; };
+		57962A8C1AC93CD5005BE423 /* RORefreshBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 57962A831AC93CD5005BE423 /* RORefreshBehavior.m */; };
+		57962A8D1AC93CD5005BE423 /* ROSearchBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 57962A871AC93CD5005BE423 /* ROSearchBehavior.m */; };
+		57962A8E1AC93CD5005BE423 /* ROShareBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 57962A8A1AC93CD5005BE423 /* ROShareBehavior.m */; };
+		57962A8F1AC93F55005BE423 /* ROBehavior.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57962A841AC93CD5005BE423 /* ROBehavior.h */; };
+		57962A901AC93F55005BE423 /* ROFilterBehavior.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57962A7F1AC93CD5005BE423 /* ROFilterBehavior.h */; };
+		57962A911AC93F55005BE423 /* RORefreshBehavior.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57962A821AC93CD5005BE423 /* RORefreshBehavior.h */; };
+		57962A921AC93F55005BE423 /* ROSearchBehavior.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57962A861AC93CD5005BE423 /* ROSearchBehavior.h */; };
+		57962A931AC93F55005BE423 /* ROShareBehavior.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57962A891AC93CD5005BE423 /* ROShareBehavior.h */; };
+		579835231A9DF0FB00BF55E9 /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC71B21A9DE0F8003D5850 /* crown.png */; };
+		579835241A9DF0FC00BF55E9 /* crown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC71B31A9DE0F8003D5850 /* crown@2x.png */; };
+		57A6A64C1A8E22D100663FA3 /* ROFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57A6A64A1A8E206B00663FA3 /* ROFormViewController.xib */; };
+		57A6A6521A9131A300663FA3 /* libPods-RadarcOnlineSDK-ActionSheetPicker-3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A6A6511A9131A300663FA3 /* libPods-RadarcOnlineSDK-ActionSheetPicker-3.0.a */; };
+		57A6A6561A924E6B00663FA3 /* ROFormFieldDateRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6A6551A924E6B00663FA3 /* ROFormFieldDateRange.m */; };
+		57A6A65A1A925D7900663FA3 /* ROFormFieldSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A6A6591A925D7900663FA3 /* ROFormFieldSelection.m */; };
+		57A6A65D1A926EC700663FA3 /* ROFormField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57A6A65C1A9264F100663FA3 /* ROFormField.h */; };
+		57A6A65E1A926EC700663FA3 /* ROFormFieldDateRange.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57A6A6541A924E6B00663FA3 /* ROFormFieldDateRange.h */; };
+		57A6A65F1A926EC700663FA3 /* ROFormFieldSelection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57A6A6581A925D7900663FA3 /* ROFormFieldSelection.h */; };
+		57B92F681AA4691D005EB86C /* ROCollectionViewCellStylePhoto.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57B92F671AA4691D005EB86C /* ROCollectionViewCellStylePhoto.xib */; };
+		57B92F6A1AA46AAC005EB86C /* ROCollectionViewCellStylePhotoTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57B92F691AA46AAC005EB86C /* ROCollectionViewCellStylePhotoTitle.xib */; };
+		57D9F4FF1A9F8510001CBDB3 /* UIImageView+RO.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D9F4FE1A9F8510001CBDB3 /* UIImageView+RO.m */; };
+		57D9F5031A9F8846001CBDB3 /* UIColor+RO.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D9F5021A9F8846001CBDB3 /* UIColor+RO.m */; };
+		57EC71BF1A9DE13E003D5850 /* ROQuiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC71B81A9DE13E003D5850 /* ROQuiz.m */; };
+		57EC71C11A9DE13E003D5850 /* ROQuizItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC71BA1A9DE13E003D5850 /* ROQuizItem.m */; };
+		57EC71C31A9DE13E003D5850 /* ROQuizQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC71BC1A9DE13E003D5850 /* ROQuizQuestion.m */; };
+		57EC71C51A9DE13E003D5850 /* ROQuizAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC71BE1A9DE13E003D5850 /* ROQuizAnswer.m */; };
+		57EC71D11A9DE158003D5850 /* ROQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC71C81A9DE158003D5850 /* ROQuizViewController.m */; };
+		57EC71D31A9DE158003D5850 /* ROQuizItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC71CA1A9DE158003D5850 /* ROQuizItemViewController.m */; };
+		57EC71D51A9DE158003D5850 /* ROQuizStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC71CC1A9DE158003D5850 /* ROQuizStyle.m */; };
+		57EC71D71A9DE158003D5850 /* ROQuizNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC71CE1A9DE158003D5850 /* ROQuizNavigationController.m */; };
+		57EC71D91A9DE158003D5850 /* ROQuizScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC71D01A9DE158003D5850 /* ROQuizScoreViewController.m */; };
+		57EC71DF1A9DE1CE003D5850 /* ROQuiz.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57EC71B71A9DE13E003D5850 /* ROQuiz.h */; };
+		57EC71E01A9DE1CE003D5850 /* ROQuizItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57EC71B91A9DE13E003D5850 /* ROQuizItem.h */; };
+		57EC71E11A9DE1CE003D5850 /* ROQuizQuestion.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57EC71BB1A9DE13E003D5850 /* ROQuizQuestion.h */; };
+		57EC71E21A9DE1CE003D5850 /* ROQuizAnswer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57EC71BD1A9DE13E003D5850 /* ROQuizAnswer.h */; };
+		57EC71E31A9DE1CE003D5850 /* ROQuizViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57EC71C71A9DE157003D5850 /* ROQuizViewController.h */; };
+		57EC71E41A9DE1CE003D5850 /* ROQuizItemViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57EC71C91A9DE158003D5850 /* ROQuizItemViewController.h */; };
+		57EC71E51A9DE1CE003D5850 /* ROQuizStyle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57EC71CB1A9DE158003D5850 /* ROQuizStyle.h */; };
+		57EC71E61A9DE1CE003D5850 /* ROQuizNavigationController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57EC71CD1A9DE158003D5850 /* ROQuizNavigationController.h */; };
+		57EC71E71A9DE1CE003D5850 /* ROQuizScoreViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 57EC71CF1A9DE158003D5850 /* ROQuizScoreViewController.h */; };
+		57EC71F11A9DE314003D5850 /* ROQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57EC71DB1A9DE176003D5850 /* ROQuizViewController.xib */; };
+		57EC71F21A9DE314003D5850 /* ROQuizScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57EC71DC1A9DE176003D5850 /* ROQuizScoreViewController.xib */; };
+		9A95D9BF1A838AEA000D53CF /* ROStringListFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95D9BE1A838AEA000D53CF /* ROStringListFilter.m */; };
+		9A95D9C31A83999B000D53CF /* RODateRangeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A95D9C21A83999B000D53CF /* RODateRangeFilter.m */; };
+		9A95D9C61A83D554000D53CF /* ROFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A95D9BC1A8368CA000D53CF /* ROFilter.h */; };
+		9A95D9C71A83D554000D53CF /* ROStringListFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A95D9BD1A836ACB000D53CF /* ROStringListFilter.h */; };
+		9A95D9C81A83D554000D53CF /* RODateRangeFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A95D9C11A83988A000D53CF /* RODateRangeFilter.h */; };
+		9ACE944719E80690004488EB /* libPods-RadarcOnlineSDK-AFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACE943619E80690004488EB /* libPods-RadarcOnlineSDK-AFNetworking.a */; };
+		9ACE944819E80690004488EB /* libPods-RadarcOnlineSDK-CocoaSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACE943719E80690004488EB /* libPods-RadarcOnlineSDK-CocoaSecurity.a */; };
+		9ACE944919E80690004488EB /* libPods-RadarcOnlineSDK-Colours.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACE943819E80690004488EB /* libPods-RadarcOnlineSDK-Colours.a */; };
+		9ACE944A19E80690004488EB /* libPods-RadarcOnlineSDK-CorePlot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACE943919E80690004488EB /* libPods-RadarcOnlineSDK-CorePlot.a */; };
+		9ACE944B19E80690004488EB /* libPods-RadarcOnlineSDK-DCKeyValueObjectMapping.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACE943A19E80690004488EB /* libPods-RadarcOnlineSDK-DCKeyValueObjectMapping.a */; };
+		9ACE944E19E80690004488EB /* libPods-RadarcOnlineSDK-ECSlidingViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACE943D19E80690004488EB /* libPods-RadarcOnlineSDK-ECSlidingViewController.a */; };
+		9ACE945119E80690004488EB /* libPods-RadarcOnlineSDK-NSUserDefaults-AESEncryptor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACE944019E80690004488EB /* libPods-RadarcOnlineSDK-NSUserDefaults-AESEncryptor.a */; };
+		9ACE945219E80690004488EB /* libPods-RadarcOnlineSDK-SDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACE944119E80690004488EB /* libPods-RadarcOnlineSDK-SDWebImage.a */; };
+		9ACE945319E80690004488EB /* libPods-RadarcOnlineSDK-SVProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACE944219E80690004488EB /* libPods-RadarcOnlineSDK-SVProgressHUD.a */; };
+		9ACE945419E80690004488EB /* libPods-RadarcOnlineSDK-SVPullToRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACE944319E80690004488EB /* libPods-RadarcOnlineSDK-SVPullToRefresh.a */; };
+		9ACE945519E80690004488EB /* libPods-RadarcOnlineSDK-UIActivityIndicator-for-SDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACE944419E80690004488EB /* libPods-RadarcOnlineSDK-UIActivityIndicator-for-SDWebImage.a */; };
+		9ACE945719E80690004488EB /* libPods-RadarcOnlineSDK-XMLDictionary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACE944619E80690004488EB /* libPods-RadarcOnlineSDK-XMLDictionary.a */; };
+		9ACE952F19E807D6004488EB /* ROFacetimeAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE945B19E807D5004488EB /* ROFacetimeAction.m */; };
+		9ACE953119E807D6004488EB /* ROMailAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE945D19E807D5004488EB /* ROMailAction.m */; };
+		9ACE953319E807D6004488EB /* ROMapAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE945F19E807D5004488EB /* ROMapAction.m */; };
+		9ACE953519E807D6004488EB /* ROMapDirectionsAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE946119E807D5004488EB /* ROMapDirectionsAction.m */; };
+		9ACE953719E807D6004488EB /* ROMapSearchAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE946319E807D5004488EB /* ROMapSearchAction.m */; };
+		9ACE953919E807D6004488EB /* RONavigationAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE946519E807D5004488EB /* RONavigationAction.m */; };
+		9ACE953B19E807D6004488EB /* ROPhoneAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE946719E807D5004488EB /* ROPhoneAction.m */; };
+		9ACE953D19E807D6004488EB /* ROSMSAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE946919E807D5004488EB /* ROSMSAction.m */; };
+		9ACE953F19E807D6004488EB /* ROUriAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE946B19E807D5004488EB /* ROUriAction.m */; };
+		9ACE954119E807D6004488EB /* ROWebBrowserAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE946D19E807D5004488EB /* ROWebBrowserAction.m */; };
+		9ACE954319E807D6004488EB /* ROYoutubeAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE946F19E807D5004488EB /* ROYoutubeAction.m */; };
+		9ACE956C19E807D6004488EB /* ROBasicAuthLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE949F19E807D5004488EB /* ROBasicAuthLoginService.m */; };
+		9ACE956E19E807D6004488EB /* ROLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94A119E807D5004488EB /* ROLoginResponse.m */; };
+		9ACE957019E807D6004488EB /* ROLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94A419E807D5004488EB /* ROLoginViewController.m */; };
+		9ACE957219E807D6004488EB /* RONavigationBasicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94A819E807D6004488EB /* RONavigationBasicController.m */; };
+		9ACE957419E807D6004488EB /* RONavMenuBasicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94AA19E807D6004488EB /* RONavMenuBasicTableViewController.m */; };
+		9ACE957A19E807D6004488EB /* RONavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94B119E807D6004488EB /* RONavigationViewController.m */; };
+		9ACE957C19E807D6004488EB /* RONavigationMainSlidingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94B419E807D6004488EB /* RONavigationMainSlidingController.m */; };
+		9ACE957E19E807D6004488EB /* RONavigationMenuSlidingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94B619E807D6004488EB /* RONavigationMenuSlidingController.m */; };
+		9ACE958019E807D6004488EB /* RONavMenuSlidingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94B819E807D6004488EB /* RONavMenuSlidingTableViewController.m */; };
+		9ACE958219E807D6004488EB /* ROBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94BA19E807D6004488EB /* ROBaseViewController.m */; };
+		9ACE958619E807D6004488EB /* ROKillSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94BE19E807D6004488EB /* ROKillSwitchViewController.m */; };
+		9ACE958A19E807D6004488EB /* ROViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94C219E807D6004488EB /* ROViewController.m */; };
+		9ACE958E19E807D6004488EB /* ROBingDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94C719E807D6004488EB /* ROBingDatasource.m */; };
+		9ACE959019E807D6004488EB /* ROCollectionCloudDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94C919E807D6004488EB /* ROCollectionCloudDatasource.m */; };
+		9ACE959219E807D6004488EB /* ROCollectionLocalDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94CB19E807D6004488EB /* ROCollectionLocalDatasource.m */; };
+		9ACE959419E807D6004488EB /* ROFlickrDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94CE19E807D6004488EB /* ROFlickrDatasource.m */; };
+		9ACE959619E807D6004488EB /* ROHtmlDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94D019E807D6004488EB /* ROHtmlDatasource.m */; };
+		9ACE959819E807D6004488EB /* ROOptionsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94D219E807D6004488EB /* ROOptionsFilter.m */; };
+		9ACE959A19E807D6004488EB /* RORSSDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94D519E807D6004488EB /* RORSSDatasource.m */; };
+		9ACE959C19E807D6004488EB /* ROYoutubeDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94D719E807D6004488EB /* ROYoutubeDatasource.m */; };
+		9ACE959E19E807D6004488EB /* ROFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94DB19E807D6004488EB /* ROFeed.m */; };
+		9ACE95A019E807D6004488EB /* ROFeedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94DD19E807D6004488EB /* ROFeedImage.m */; };
+		9ACE95A219E807D6004488EB /* ROFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94DF19E807D6004488EB /* ROFeedItem.m */; };
+		9ACE95A419E807D6004488EB /* ROFeedItemAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94E119E807D6004488EB /* ROFeedItemAuthor.m */; };
+		9ACE95A619E807D6004488EB /* ROItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94E319E807D6004488EB /* ROItemCell.m */; };
+		9ACE95A819E807D6004488EB /* ROObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94E519E807D6004488EB /* ROObject.m */; };
+		9ACE95AA19E807D6004488EB /* ROPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94E719E807D6004488EB /* ROPage.m */; };
+		9ACE95AC19E807D6004488EB /* ROWebContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94E919E807D6004488EB /* ROWebContent.m */; };
+		9ACE95BB19E807D6004488EB /* ROAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94FA19E807D6004488EB /* ROAppDelegate.m */; };
+		9ACE95BD19E807D6004488EB /* ROCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE94FE19E807D6004488EB /* ROCache.m */; };
+		9ACE95BF19E807D6004488EB /* NSArray+RO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE950119E807D6004488EB /* NSArray+RO.m */; };
+		9ACE95C119E807D6004488EB /* NSDate+RO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE950319E807D6004488EB /* NSDate+RO.m */; };
+		9ACE95C319E807D6004488EB /* NSDecimalNumber+RO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE950519E807D6004488EB /* NSDecimalNumber+RO.m */; };
+		9ACE95C519E807D6004488EB /* NSString+RO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE950719E807D6004488EB /* NSString+RO.m */; };
+		9ACE95C719E807D6004488EB /* UIAlertView+RO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE950919E807D6004488EB /* UIAlertView+RO.m */; };
+		9ACE95C919E807D6004488EB /* UIView+RO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE950B19E807D6004488EB /* UIView+RO.m */; };
+		9ACE95CB19E807D6004488EB /* ROFeedBaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE950E19E807D6004488EB /* ROFeedBaseParser.m */; };
+		9ACE95CD19E807D6004488EB /* ROFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE951019E807D6004488EB /* ROFeedParser.m */; };
+		9ACE95CF19E807D6004488EB /* RORSSDictionaryParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE951219E807D6004488EB /* RORSSDictionaryParser.m */; };
+		9ACE95D119E807D6004488EB /* ROStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE951619E807D6004488EB /* ROStyle.m */; };
+		9ACE95D319E807D6004488EB /* ROCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE951B19E807D6004488EB /* ROCollectionViewCell.m */; };
+		9ACE95D519E807D6004488EB /* ROHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE951D19E807D6004488EB /* ROHeaderTableViewCell.m */; };
+		9ACE95D719E807D6004488EB /* ROImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE951F19E807D6004488EB /* ROImageTableViewCell.m */; };
+		9ACE95DB19E807D6004488EB /* ROTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE952319E807D6004488EB /* ROTableViewCell.m */; };
+		9ACE95DD19E807D6004488EB /* ROTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE952519E807D6004488EB /* ROTextTableViewCell.m */; };
+		9ACE95DF19E807D6004488EB /* ROChartSerie.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE952819E807D6004488EB /* ROChartSerie.m */; };
+		9ACE95E119E807D6004488EB /* ROChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE952A19E807D6004488EB /* ROChartView.m */; };
+		9ACE95E319E807D6004488EB /* ROLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACE952C19E807D6004488EB /* ROLabel.m */; };
+		9ACE95E719E80851004488EB /* ROAction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE945919E807D5004488EB /* ROAction.h */; };
+		9ACE95E819E80851004488EB /* ROFacetimeAction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE945A19E807D5004488EB /* ROFacetimeAction.h */; };
+		9ACE95E919E80851004488EB /* ROMailAction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE945C19E807D5004488EB /* ROMailAction.h */; };
+		9ACE95EA19E80851004488EB /* ROMapAction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE945E19E807D5004488EB /* ROMapAction.h */; };
+		9ACE95EB19E80851004488EB /* ROMapDirectionsAction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE946019E807D5004488EB /* ROMapDirectionsAction.h */; };
+		9ACE95EC19E80851004488EB /* ROMapSearchAction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE946219E807D5004488EB /* ROMapSearchAction.h */; };
+		9ACE95ED19E80851004488EB /* RONavigationAction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE946419E807D5004488EB /* RONavigationAction.h */; };
+		9ACE95EE19E80851004488EB /* ROPhoneAction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE946619E807D5004488EB /* ROPhoneAction.h */; };
+		9ACE95EF19E80851004488EB /* ROSMSAction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE946819E807D5004488EB /* ROSMSAction.h */; };
+		9ACE95F019E80851004488EB /* ROUriAction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE946A19E807D5004488EB /* ROUriAction.h */; };
+		9ACE95F119E80851004488EB /* ROWebBrowserAction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE946C19E807D5004488EB /* ROWebBrowserAction.h */; };
+		9ACE95F219E80851004488EB /* ROYoutubeAction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE946E19E807D5004488EB /* ROYoutubeAction.h */; };
+		9ACE95F819E80851004488EB /* ROBasicAuthLoginService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE949E19E807D5004488EB /* ROBasicAuthLoginService.h */; };
+		9ACE95F919E80851004488EB /* ROLoginResponse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94A019E807D5004488EB /* ROLoginResponse.h */; };
+		9ACE95FA19E80851004488EB /* ROLoginService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94A219E807D5004488EB /* ROLoginService.h */; };
+		9ACE95FB19E80851004488EB /* ROLoginViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94A319E807D5004488EB /* ROLoginViewController.h */; };
+		9ACE95FC19E80851004488EB /* RONavigationBasicController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94A719E807D6004488EB /* RONavigationBasicController.h */; };
+		9ACE95FD19E80851004488EB /* RONavMenuBasicTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94A919E807D6004488EB /* RONavMenuBasicTableViewController.h */; };
+		9ACE960019E80851004488EB /* RONavigationViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94B019E807D6004488EB /* RONavigationViewController.h */; };
+		9ACE960119E80851004488EB /* RONavigationMainSlidingController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94B319E807D6004488EB /* RONavigationMainSlidingController.h */; };
+		9ACE960219E80851004488EB /* RONavigationMenuSlidingController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94B519E807D6004488EB /* RONavigationMenuSlidingController.h */; };
+		9ACE960319E80851004488EB /* RONavMenuSlidingTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94B719E807D6004488EB /* RONavMenuSlidingTableViewController.h */; };
+		9ACE960419E80851004488EB /* ROBaseViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94B919E807D6004488EB /* ROBaseViewController.h */; };
+		9ACE960619E80851004488EB /* ROKillSwitchViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94BD19E807D6004488EB /* ROKillSwitchViewController.h */; };
+		9ACE960819E80851004488EB /* ROViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94C119E807D6004488EB /* ROViewController.h */; };
+		9ACE960A19E80851004488EB /* ROBingDatasource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94C619E807D6004488EB /* ROBingDatasource.h */; };
+		9ACE960B19E80851004488EB /* ROCollectionCloudDatasource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94C819E807D6004488EB /* ROCollectionCloudDatasource.h */; };
+		9ACE960C19E80851004488EB /* ROCollectionLocalDatasource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94CA19E807D6004488EB /* ROCollectionLocalDatasource.h */; };
+		9ACE960D19E80851004488EB /* RODatasource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94CC19E807D6004488EB /* RODatasource.h */; };
+		9ACE960E19E80851004488EB /* ROFlickrDatasource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94CD19E807D6004488EB /* ROFlickrDatasource.h */; };
+		9ACE960F19E80851004488EB /* ROHtmlDatasource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94CF19E807D6004488EB /* ROHtmlDatasource.h */; };
+		9ACE961019E80851004488EB /* ROOptionsFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94D119E807D6004488EB /* ROOptionsFilter.h */; };
+		9ACE961119E80851004488EB /* ROPagination.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94D319E807D6004488EB /* ROPagination.h */; };
+		9ACE961219E80851004488EB /* RORSSDatasource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94D419E807D6004488EB /* RORSSDatasource.h */; };
+		9ACE961319E80851004488EB /* ROYoutubeDatasource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94D619E807D6004488EB /* ROYoutubeDatasource.h */; };
+		9ACE961419E80851004488EB /* ROFeed.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94DA19E807D6004488EB /* ROFeed.h */; };
+		9ACE961519E80851004488EB /* ROFeedImage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94DC19E807D6004488EB /* ROFeedImage.h */; };
+		9ACE961619E80851004488EB /* ROFeedItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94DE19E807D6004488EB /* ROFeedItem.h */; };
+		9ACE961719E80851004488EB /* ROFeedItemAuthor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94E019E807D6004488EB /* ROFeedItemAuthor.h */; };
+		9ACE961819E80851004488EB /* ROItemCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94E219E807D6004488EB /* ROItemCell.h */; };
+		9ACE961919E80851004488EB /* ROObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94E419E807D6004488EB /* ROObject.h */; };
+		9ACE961A19E80851004488EB /* ROPage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94E619E807D6004488EB /* ROPage.h */; };
+		9ACE961B19E80851004488EB /* ROWebContent.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94E819E807D6004488EB /* ROWebContent.h */; };
+		9ACE961C19E80851004488EB /* ROAppDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94F919E807D6004488EB /* ROAppDelegate.h */; };
+		9ACE961D19E80851004488EB /* ROCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE94FD19E807D6004488EB /* ROCache.h */; };
+		9ACE961E19E80851004488EB /* NSArray+RO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE950019E807D6004488EB /* NSArray+RO.h */; };
+		9ACE961F19E80851004488EB /* NSDate+RO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE950219E807D6004488EB /* NSDate+RO.h */; };
+		9ACE962019E80851004488EB /* NSDecimalNumber+RO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE950419E807D6004488EB /* NSDecimalNumber+RO.h */; };
+		9ACE962119E80851004488EB /* NSString+RO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE950619E807D6004488EB /* NSString+RO.h */; };
+		9ACE962219E80851004488EB /* UIAlertView+RO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE950819E807D6004488EB /* UIAlertView+RO.h */; };
+		9ACE962319E80851004488EB /* UIView+RO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE950A19E807D6004488EB /* UIView+RO.h */; };
+		9ACE962419E80851004488EB /* ROFeedBaseParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE950D19E807D6004488EB /* ROFeedBaseParser.h */; };
+		9ACE962519E80852004488EB /* ROFeedParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE950F19E807D6004488EB /* ROFeedParser.h */; };
+		9ACE962619E80852004488EB /* RORSSDictionaryParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE951119E807D6004488EB /* RORSSDictionaryParser.h */; };
+		9ACE962719E80852004488EB /* RORSSNameSpace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE951319E807D6004488EB /* RORSSNameSpace.h */; };
+		9ACE962819E80852004488EB /* ROStyle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE951519E807D6004488EB /* ROStyle.h */; };
+		9ACE962919E80852004488EB /* ROCellConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE951919E807D6004488EB /* ROCellConstants.h */; };
+		9ACE962A19E80852004488EB /* ROCollectionViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE951A19E807D6004488EB /* ROCollectionViewCell.h */; };
+		9ACE962B19E80852004488EB /* ROHeaderTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE951C19E807D6004488EB /* ROHeaderTableViewCell.h */; };
+		9ACE962C19E80852004488EB /* ROImageTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE951E19E807D6004488EB /* ROImageTableViewCell.h */; };
+		9ACE962E19E80852004488EB /* ROTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE952219E807D6004488EB /* ROTableViewCell.h */; };
+		9ACE962F19E80852004488EB /* ROTextTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE952419E807D6004488EB /* ROTextTableViewCell.h */; };
+		9ACE963019E80852004488EB /* ROChartSerie.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE952719E807D6004488EB /* ROChartSerie.h */; };
+		9ACE963119E80852004488EB /* ROChartView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE952919E807D6004488EB /* ROChartView.h */; };
+		9ACE963219E80852004488EB /* ROLabel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACE952B19E807D6004488EB /* ROLabel.h */; };
+		9ACE966D19E80D23004488EB /* ROHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE94EE19E807D6004488EB /* ROHeaderTableViewCell.xib */; };
+		9ACE966E19E80D23004488EB /* ROKillSwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE94EF19E807D6004488EB /* ROKillSwitchViewController.xib */; };
+		9ACE966F19E80D23004488EB /* ROLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE94F019E807D6004488EB /* ROLoginViewController.xib */; };
+		9ACE967119E80D23004488EB /* ROTableViewCellStyleDetailImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE94F219E807D6004488EB /* ROTableViewCellStyleDetailImage.xib */; };
+		9ACE967219E80D23004488EB /* ROTableViewCellStyleDetailText.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE94F319E807D6004488EB /* ROTableViewCellStyleDetailText.xib */; };
+		9ACE967319E80D23004488EB /* ROTableViewCellStylePhotoTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE94F419E807D6004488EB /* ROTableViewCellStylePhotoTitle.xib */; };
+		9ACE967419E80D23004488EB /* ROTableViewCellStylePhotoTitleBottomDescription.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE94F519E807D6004488EB /* ROTableViewCellStylePhotoTitleBottomDescription.xib */; };
+		9ACE967519E80D23004488EB /* ROTableViewCellStylePhotoTitleDescription.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE94F619E807D6004488EB /* ROTableViewCellStylePhotoTitleDescription.xib */; };
+		9ACE967619E80D23004488EB /* ROTableViewCellStyleTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE94F719E807D6004488EB /* ROTableViewCellStyleTitle.xib */; };
+		9ACE967719E80D23004488EB /* ROTableViewCellStyleTitleDescription.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE94F819E807D6004488EB /* ROTableViewCellStyleTitleDescription.xib */; };
+		9ACE967819E80D29004488EB /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947119E807D5004488EB /* arrow.png */; };
+		9ACE967919E80D29004488EB /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947219E807D5004488EB /* arrow@2x.png */; };
+		9ACE967A19E80D29004488EB /* arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947319E807D5004488EB /* arrow@3x.png */; };
+		9ACE967B19E80D29004488EB /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947419E807D5004488EB /* email.png */; };
+		9ACE967C19E80D29004488EB /* email@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947519E807D5004488EB /* email@2x.png */; };
+		9ACE967D19E80D29004488EB /* email@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947619E807D5004488EB /* email@3x.png */; };
+		9ACE967E19E80D29004488EB /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947719E807D5004488EB /* location.png */; };
+		9ACE967F19E80D29004488EB /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947819E807D5004488EB /* location@2x.png */; };
+		9ACE968019E80D29004488EB /* location@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947919E807D5004488EB /* location@3x.png */; };
+		9ACE968119E80D29004488EB /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947A19E807D5004488EB /* message.png */; };
+		9ACE968219E80D29004488EB /* message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947B19E807D5004488EB /* message@2x.png */; };
+		9ACE968319E80D29004488EB /* message@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947C19E807D5004488EB /* message@3x.png */; };
+		9ACE968419E80D29004488EB /* NavMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947D19E807D5004488EB /* NavMenu.png */; };
+		9ACE968519E80D29004488EB /* NavMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947E19E807D5004488EB /* NavMenu@2x.png */; };
+		9ACE968619E80D29004488EB /* NoPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE947F19E807D5004488EB /* NoPhoto.png */; };
+		9ACE968719E80D29004488EB /* NoPhoto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE948019E807D5004488EB /* NoPhoto@2x.png */; };
+		9ACE968819E80D29004488EB /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE948119E807D5004488EB /* phone.png */; };
+		9ACE968919E80D29004488EB /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE948219E807D5004488EB /* phone@2x.png */; };
+		9ACE968A19E80D29004488EB /* phone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE948319E807D5004488EB /* phone@3x.png */; };
+		9ACE968B19E80D29004488EB /* PlaceHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE948419E807D5004488EB /* PlaceHolder.png */; };
+		9ACE968C19E80D29004488EB /* PlaceHolder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE948519E807D5004488EB /* PlaceHolder@2x.png */; };
+		9ACE968D19E80D29004488EB /* Playvideo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE948619E807D5004488EB /* Playvideo.png */; };
+		9ACE968E19E80D29004488EB /* Playvideo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE948719E807D5004488EB /* Playvideo@2x.png */; };
+		9ACE968F19E80D29004488EB /* radarconline.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE948819E807D5004488EB /* radarconline.png */; };
+		9ACE969019E80D29004488EB /* radarconline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE948919E807D5004488EB /* radarconline@2x.png */; };
+		9ACE969119E80D29004488EB /* radarconline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE948A19E807D5004488EB /* radarconline@3x.png */; };
+		9ACE969219E80D29004488EB /* url.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE948B19E807D5004488EB /* url.png */; };
+		9ACE969319E80D29004488EB /* url@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE948C19E807D5004488EB /* url@2x.png */; };
+		9ACE969419E80D29004488EB /* url@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ACE948D19E807D5004488EB /* url@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57C40DCA19EB3C5400379FB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A29DF9219E7DE76003C745D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACE966319E80D11004488EB;
+			remoteInfo = RadarcOnlineSDKResources;
+		};
+		9A2C5EAC19E7EDFC00D723E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A29DF9219E7DE76003C745D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A2C5EA719E7EDD900D723E1;
+			remoteInfo = Headers;
+		};
+		9A2C5EB219E7F02D00D723E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A29DF9219E7DE76003C745D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A2C5EA719E7EDD900D723E1;
+			remoteInfo = Headers;
+		};
+		9ACE969519E80D33004488EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A29DF9219E7DE76003C745D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACE966319E80D11004488EB;
+			remoteInfo = RadarcOnlineSDKResources;
+		};
+		9AF572DE19ED337B007EDD76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A29DF9219E7DE76003C745D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A2C5EA719E7EDD900D723E1;
+			remoteInfo = Headers;
+		};
+		9AF572E019ED337B007EDD76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A29DF9219E7DE76003C745D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACE966319E80D11004488EB;
+			remoteInfo = RadarcOnlineSDKResources;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A29DF9819E7DE76003C745D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "Headers/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				571B1F581B14C72E008591AD /* RORestClient.h in CopyFiles */,
+				571B1F591B14C72E008591AD /* ROAppNowDatasource.h in CopyFiles */,
+				5715189C1B0F5F81003F242E /* ROModel.h in CopyFiles */,
+				5715189D1B0F5F81003F242E /* NSDictionary+RO.h in CopyFiles */,
+				57822E9D1B07849600C8F26E /* UILabel+RO.h in CopyFiles */,
+				57822E9E1B07849600C8F26E /* ROTextStyle.h in CopyFiles */,
+				57822E861B061BF200C8F26E /* UIFont+RO.h in CopyFiles */,
+				57962A8F1AC93F55005BE423 /* ROBehavior.h in CopyFiles */,
+				57962A901AC93F55005BE423 /* ROFilterBehavior.h in CopyFiles */,
+				57962A911AC93F55005BE423 /* RORefreshBehavior.h in CopyFiles */,
+				57962A921AC93F55005BE423 /* ROSearchBehavior.h in CopyFiles */,
+				57962A931AC93F55005BE423 /* ROShareBehavior.h in CopyFiles */,
+				571521C21AC7FDD2009F6118 /* ROCollectionViewController.h in CopyFiles */,
+				571521BD1AC7FD52009F6118 /* ROChartViewController.h in CopyFiles */,
+				571521B71AC7FCB5009F6118 /* ROCustomTableViewController.h in CopyFiles */,
+				571521B81AC7FCB5009F6118 /* ROTableViewController.h in CopyFiles */,
+				571521AC1AC7FB93009F6118 /* ROCellDescriptor.h in CopyFiles */,
+				571521AD1AC7FB93009F6118 /* ROHeaderCellDescriptor.h in CopyFiles */,
+				571521AE1AC7FB93009F6118 /* ROImageCellDescriptor.h in CopyFiles */,
+				571521AF1AC7FB93009F6118 /* ROTextCellDescriptor.h in CopyFiles */,
+				5715219E1AC7F861009F6118 /* RODataLoader.h in CopyFiles */,
+				5715219F1AC7F861009F6118 /* ROListDataLoader.h in CopyFiles */,
+				571521A01AC7F861009F6118 /* ROSingleDataLoader.h in CopyFiles */,
+				573411011AC1E392009F3888 /* UITableViewCell+RO.h in CopyFiles */,
+				5762FB611AC1BA4700D50199 /* ROError.h in CopyFiles */,
+				5762FB621AC1BA4700D50199 /* ROErrorManager.h in CopyFiles */,
+				578D95251A9F8F3400B2E9D0 /* UIImageView+RO.h in CopyFiles */,
+				578D95261A9F8F3400B2E9D0 /* UIColor+RO.h in CopyFiles */,
+				57EC71DF1A9DE1CE003D5850 /* ROQuiz.h in CopyFiles */,
+				57EC71E01A9DE1CE003D5850 /* ROQuizItem.h in CopyFiles */,
+				57EC71E11A9DE1CE003D5850 /* ROQuizQuestion.h in CopyFiles */,
+				57EC71E21A9DE1CE003D5850 /* ROQuizAnswer.h in CopyFiles */,
+				57EC71E31A9DE1CE003D5850 /* ROQuizViewController.h in CopyFiles */,
+				57EC71E41A9DE1CE003D5850 /* ROQuizItemViewController.h in CopyFiles */,
+				57EC71E51A9DE1CE003D5850 /* ROQuizStyle.h in CopyFiles */,
+				57EC71E61A9DE1CE003D5850 /* ROQuizNavigationController.h in CopyFiles */,
+				57EC71E71A9DE1CE003D5850 /* ROQuizScoreViewController.h in CopyFiles */,
+				57A6A65D1A926EC700663FA3 /* ROFormField.h in CopyFiles */,
+				57A6A65E1A926EC700663FA3 /* ROFormFieldDateRange.h in CopyFiles */,
+				57A6A65F1A926EC700663FA3 /* ROFormFieldSelection.h in CopyFiles */,
+				571F44B31A8B71CD00A538B3 /* ROFormViewController.h in CopyFiles */,
+				571F44B41A8B71CD00A538B3 /* ROOptionsViewController.h in CopyFiles */,
+				9A95D9C61A83D554000D53CF /* ROFilter.h in CopyFiles */,
+				9A95D9C71A83D554000D53CF /* ROStringListFilter.h in CopyFiles */,
+				9A95D9C81A83D554000D53CF /* RODateRangeFilter.h in CopyFiles */,
+				577A500319EA873B00E7A638 /* UIImage+RO.h in CopyFiles */,
+				577A500219EA873200E7A638 /* NSBundle+RO.h in CopyFiles */,
+				9ACE95E719E80851004488EB /* ROAction.h in CopyFiles */,
+				9ACE95E819E80851004488EB /* ROFacetimeAction.h in CopyFiles */,
+				9ACE95E919E80851004488EB /* ROMailAction.h in CopyFiles */,
+				9ACE95EA19E80851004488EB /* ROMapAction.h in CopyFiles */,
+				9ACE95EB19E80851004488EB /* ROMapDirectionsAction.h in CopyFiles */,
+				9ACE95EC19E80851004488EB /* ROMapSearchAction.h in CopyFiles */,
+				9ACE95ED19E80851004488EB /* RONavigationAction.h in CopyFiles */,
+				9ACE95EE19E80851004488EB /* ROPhoneAction.h in CopyFiles */,
+				9ACE95EF19E80851004488EB /* ROSMSAction.h in CopyFiles */,
+				9ACE95F019E80851004488EB /* ROUriAction.h in CopyFiles */,
+				9ACE95F119E80851004488EB /* ROWebBrowserAction.h in CopyFiles */,
+				9ACE95F219E80851004488EB /* ROYoutubeAction.h in CopyFiles */,
+				9ACE95F819E80851004488EB /* ROBasicAuthLoginService.h in CopyFiles */,
+				9ACE95F919E80851004488EB /* ROLoginResponse.h in CopyFiles */,
+				9ACE95FA19E80851004488EB /* ROLoginService.h in CopyFiles */,
+				9ACE95FB19E80851004488EB /* ROLoginViewController.h in CopyFiles */,
+				9ACE95FC19E80851004488EB /* RONavigationBasicController.h in CopyFiles */,
+				9ACE95FD19E80851004488EB /* RONavMenuBasicTableViewController.h in CopyFiles */,
+				9ACE960019E80851004488EB /* RONavigationViewController.h in CopyFiles */,
+				9ACE960119E80851004488EB /* RONavigationMainSlidingController.h in CopyFiles */,
+				9ACE960219E80851004488EB /* RONavigationMenuSlidingController.h in CopyFiles */,
+				9ACE960319E80851004488EB /* RONavMenuSlidingTableViewController.h in CopyFiles */,
+				9ACE960419E80851004488EB /* ROBaseViewController.h in CopyFiles */,
+				9ACE960619E80851004488EB /* ROKillSwitchViewController.h in CopyFiles */,
+				9ACE960819E80851004488EB /* ROViewController.h in CopyFiles */,
+				9ACE960A19E80851004488EB /* ROBingDatasource.h in CopyFiles */,
+				9ACE960B19E80851004488EB /* ROCollectionCloudDatasource.h in CopyFiles */,
+				9ACE960C19E80851004488EB /* ROCollectionLocalDatasource.h in CopyFiles */,
+				9ACE960D19E80851004488EB /* RODatasource.h in CopyFiles */,
+				9ACE960E19E80851004488EB /* ROFlickrDatasource.h in CopyFiles */,
+				9ACE960F19E80851004488EB /* ROHtmlDatasource.h in CopyFiles */,
+				9ACE961019E80851004488EB /* ROOptionsFilter.h in CopyFiles */,
+				9ACE961119E80851004488EB /* ROPagination.h in CopyFiles */,
+				9ACE961219E80851004488EB /* RORSSDatasource.h in CopyFiles */,
+				9ACE961319E80851004488EB /* ROYoutubeDatasource.h in CopyFiles */,
+				9ACE961419E80851004488EB /* ROFeed.h in CopyFiles */,
+				9ACE961519E80851004488EB /* ROFeedImage.h in CopyFiles */,
+				9ACE961619E80851004488EB /* ROFeedItem.h in CopyFiles */,
+				9ACE961719E80851004488EB /* ROFeedItemAuthor.h in CopyFiles */,
+				9ACE961819E80851004488EB /* ROItemCell.h in CopyFiles */,
+				9ACE961919E80851004488EB /* ROObject.h in CopyFiles */,
+				9ACE961A19E80851004488EB /* ROPage.h in CopyFiles */,
+				9ACE961B19E80851004488EB /* ROWebContent.h in CopyFiles */,
+				9ACE961C19E80851004488EB /* ROAppDelegate.h in CopyFiles */,
+				9ACE961D19E80851004488EB /* ROCache.h in CopyFiles */,
+				9ACE961E19E80851004488EB /* NSArray+RO.h in CopyFiles */,
+				9ACE961F19E80851004488EB /* NSDate+RO.h in CopyFiles */,
+				9ACE962019E80851004488EB /* NSDecimalNumber+RO.h in CopyFiles */,
+				9ACE962119E80851004488EB /* NSString+RO.h in CopyFiles */,
+				9ACE962219E80851004488EB /* UIAlertView+RO.h in CopyFiles */,
+				9ACE962319E80851004488EB /* UIView+RO.h in CopyFiles */,
+				9ACE962419E80851004488EB /* ROFeedBaseParser.h in CopyFiles */,
+				9ACE962519E80852004488EB /* ROFeedParser.h in CopyFiles */,
+				9ACE962619E80852004488EB /* RORSSDictionaryParser.h in CopyFiles */,
+				9ACE962719E80852004488EB /* RORSSNameSpace.h in CopyFiles */,
+				9ACE962819E80852004488EB /* ROStyle.h in CopyFiles */,
+				9ACE962919E80852004488EB /* ROCellConstants.h in CopyFiles */,
+				9ACE962A19E80852004488EB /* ROCollectionViewCell.h in CopyFiles */,
+				9ACE962B19E80852004488EB /* ROHeaderTableViewCell.h in CopyFiles */,
+				9ACE962C19E80852004488EB /* ROImageTableViewCell.h in CopyFiles */,
+				9ACE962E19E80852004488EB /* ROTableViewCell.h in CopyFiles */,
+				9ACE962F19E80852004488EB /* ROTextTableViewCell.h in CopyFiles */,
+				9ACE963019E80852004488EB /* ROChartSerie.h in CopyFiles */,
+				9ACE963119E80852004488EB /* ROChartView.h in CopyFiles */,
+				9ACE963219E80852004488EB /* ROLabel.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0CEF1BEB725DBFC911BEE13C /* Pods-RadarcOnlineSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadarcOnlineSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadarcOnlineSDK/Pods-RadarcOnlineSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		25A9CC1FBE22D4CCCA3FB6C0 /* libPods-RadarcOnlineSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RadarcOnlineSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D6FA012769648A7F5103A2 /* Pods-RadarcOnlineSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadarcOnlineSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadarcOnlineSDKTests/Pods-RadarcOnlineSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		5715188D1B0F4750003F242E /* NSDictionary+RO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RO.h"; sourceTree = "<group>"; };
+		5715188E1B0F4750003F242E /* NSDictionary+RO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RO.m"; sourceTree = "<group>"; };
+		5715189B1B0F47BF003F242E /* ROModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROModel.h; sourceTree = "<group>"; };
+		571521971AC7F828009F6118 /* RODataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RODataLoader.h; sourceTree = "<group>"; };
+		571521981AC7F828009F6118 /* ROListDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROListDataLoader.h; sourceTree = "<group>"; };
+		571521991AC7F828009F6118 /* ROListDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROListDataLoader.m; sourceTree = "<group>"; };
+		5715219A1AC7F828009F6118 /* ROSingleDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSingleDataLoader.h; sourceTree = "<group>"; };
+		5715219B1AC7F828009F6118 /* ROSingleDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROSingleDataLoader.m; sourceTree = "<group>"; };
+		571521A21AC7F969009F6118 /* ROCellDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROCellDescriptor.h; sourceTree = "<group>"; };
+		571521A31AC7F969009F6118 /* ROHeaderCellDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROHeaderCellDescriptor.h; sourceTree = "<group>"; };
+		571521A41AC7F969009F6118 /* ROHeaderCellDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROHeaderCellDescriptor.m; sourceTree = "<group>"; };
+		571521A51AC7F969009F6118 /* ROImageCellDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROImageCellDescriptor.h; sourceTree = "<group>"; };
+		571521A61AC7F969009F6118 /* ROImageCellDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROImageCellDescriptor.m; sourceTree = "<group>"; };
+		571521A71AC7F969009F6118 /* ROTextCellDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROTextCellDescriptor.h; sourceTree = "<group>"; };
+		571521A81AC7F969009F6118 /* ROTextCellDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROTextCellDescriptor.m; sourceTree = "<group>"; };
+		571521B11AC7FCA8009F6118 /* ROCustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROCustomTableViewController.h; sourceTree = "<group>"; };
+		571521B21AC7FCA8009F6118 /* ROCustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROCustomTableViewController.m; sourceTree = "<group>"; };
+		571521B31AC7FCA8009F6118 /* ROTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROTableViewController.h; sourceTree = "<group>"; };
+		571521B41AC7FCA8009F6118 /* ROTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROTableViewController.m; sourceTree = "<group>"; };
+		571521BA1AC7FD00009F6118 /* ROChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROChartViewController.h; sourceTree = "<group>"; };
+		571521BB1AC7FD00009F6118 /* ROChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROChartViewController.m; sourceTree = "<group>"; };
+		571521BF1AC7FDB1009F6118 /* ROCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROCollectionViewController.h; sourceTree = "<group>"; };
+		571521C01AC7FDB1009F6118 /* ROCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROCollectionViewController.m; sourceTree = "<group>"; };
+		571B1F521B1496B3008591AD /* RORestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RORestClient.h; sourceTree = "<group>"; };
+		571B1F531B1496B3008591AD /* RORestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RORestClient.m; sourceTree = "<group>"; };
+		571B1F551B14BB6F008591AD /* ROAppNowDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROAppNowDatasource.h; sourceTree = "<group>"; };
+		571B1F561B14BB6F008591AD /* ROAppNowDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROAppNowDatasource.m; sourceTree = "<group>"; };
+		571F448A1A8B67A100A538B3 /* filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter.png; sourceTree = "<group>"; };
+		571F448B1A8B67A100A538B3 /* filter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filter@2x.png"; sourceTree = "<group>"; };
+		571F448C1A8B67A100A538B3 /* filterClear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filterClear.png; sourceTree = "<group>"; };
+		571F448D1A8B67A100A538B3 /* filterClear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filterClear@2x.png"; sourceTree = "<group>"; };
+		571F449A1A8B681100A538B3 /* ROFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFormViewController.h; sourceTree = "<group>"; };
+		571F449B1A8B681100A538B3 /* ROFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFormViewController.m; sourceTree = "<group>"; };
+		571F449C1A8B681100A538B3 /* ROOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROOptionsViewController.h; sourceTree = "<group>"; };
+		571F449D1A8B681100A538B3 /* ROOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROOptionsViewController.m; sourceTree = "<group>"; };
+		571F44AE1A8B68FA00A538B3 /* ROOptionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROOptionsViewController.xib; sourceTree = "<group>"; };
+		573410FE1AC1E36D009F3888 /* UITableViewCell+RO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+RO.h"; sourceTree = "<group>"; };
+		573410FF1AC1E36D009F3888 /* UITableViewCell+RO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+RO.m"; sourceTree = "<group>"; };
+		57353EAB1AA32E540031BA1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5762FB5B1AC1B9E700D50199 /* ROError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROError.h; sourceTree = "<group>"; };
+		5762FB5C1AC1B9E700D50199 /* ROError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROError.m; sourceTree = "<group>"; };
+		5762FB5D1AC1B9E700D50199 /* ROErrorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROErrorManager.h; sourceTree = "<group>"; };
+		5762FB5E1AC1B9E700D50199 /* ROErrorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROErrorManager.m; sourceTree = "<group>"; };
+		577A4FFA19EA829700E7A638 /* NSBundle+RO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+RO.h"; sourceTree = "<group>"; };
+		577A4FFB19EA829700E7A638 /* NSBundle+RO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+RO.m"; sourceTree = "<group>"; };
+		577A4FFE19EA84F300E7A638 /* UIImage+RO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RO.h"; sourceTree = "<group>"; };
+		577A4FFF19EA84F300E7A638 /* UIImage+RO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RO.m"; sourceTree = "<group>"; };
+		57822E801B0606B300C8F26E /* UIFont+RO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+RO.h"; sourceTree = "<group>"; };
+		57822E811B0606B300C8F26E /* UIFont+RO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+RO.m"; sourceTree = "<group>"; };
+		57822E971B07841500C8F26E /* UILabel+RO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RO.h"; sourceTree = "<group>"; };
+		57822E981B07841500C8F26E /* UILabel+RO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RO.m"; sourceTree = "<group>"; };
+		57822E9A1B07847200C8F26E /* ROTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROTextStyle.h; sourceTree = "<group>"; };
+		57822E9B1B07847200C8F26E /* ROTextStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROTextStyle.m; sourceTree = "<group>"; };
+		57962A7F1AC93CD5005BE423 /* ROFilterBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFilterBehavior.h; sourceTree = "<group>"; };
+		57962A801AC93CD5005BE423 /* ROFilterBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFilterBehavior.m; sourceTree = "<group>"; };
+		57962A821AC93CD5005BE423 /* RORefreshBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RORefreshBehavior.h; sourceTree = "<group>"; };
+		57962A831AC93CD5005BE423 /* RORefreshBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RORefreshBehavior.m; sourceTree = "<group>"; };
+		57962A841AC93CD5005BE423 /* ROBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROBehavior.h; sourceTree = "<group>"; };
+		57962A861AC93CD5005BE423 /* ROSearchBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSearchBehavior.h; sourceTree = "<group>"; };
+		57962A871AC93CD5005BE423 /* ROSearchBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROSearchBehavior.m; sourceTree = "<group>"; };
+		57962A891AC93CD5005BE423 /* ROShareBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROShareBehavior.h; sourceTree = "<group>"; };
+		57962A8A1AC93CD5005BE423 /* ROShareBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROShareBehavior.m; sourceTree = "<group>"; };
+		57A6A64A1A8E206B00663FA3 /* ROFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROFormViewController.xib; sourceTree = "<group>"; };
+		57A6A6511A9131A300663FA3 /* libPods-RadarcOnlineSDK-ActionSheetPicker-3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RadarcOnlineSDK-ActionSheetPicker-3.0.a"; path = "Pods/build/Debug-iphoneos/libPods-RadarcOnlineSDK-ActionSheetPicker-3.0.a"; sourceTree = "<group>"; };
+		57A6A6541A924E6B00663FA3 /* ROFormFieldDateRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFormFieldDateRange.h; sourceTree = "<group>"; };
+		57A6A6551A924E6B00663FA3 /* ROFormFieldDateRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFormFieldDateRange.m; sourceTree = "<group>"; };
+		57A6A6581A925D7900663FA3 /* ROFormFieldSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFormFieldSelection.h; sourceTree = "<group>"; };
+		57A6A6591A925D7900663FA3 /* ROFormFieldSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFormFieldSelection.m; sourceTree = "<group>"; };
+		57A6A65C1A9264F100663FA3 /* ROFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFormField.h; sourceTree = "<group>"; };
+		57B92F671AA4691D005EB86C /* ROCollectionViewCellStylePhoto.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROCollectionViewCellStylePhoto.xib; sourceTree = "<group>"; };
+		57B92F691AA46AAC005EB86C /* ROCollectionViewCellStylePhotoTitle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROCollectionViewCellStylePhotoTitle.xib; sourceTree = "<group>"; };
+		57D9F4FD1A9F8510001CBDB3 /* UIImageView+RO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RO.h"; sourceTree = "<group>"; };
+		57D9F4FE1A9F8510001CBDB3 /* UIImageView+RO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RO.m"; sourceTree = "<group>"; };
+		57D9F5011A9F8846001CBDB3 /* UIColor+RO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RO.h"; sourceTree = "<group>"; };
+		57D9F5021A9F8846001CBDB3 /* UIColor+RO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RO.m"; sourceTree = "<group>"; };
+		57DBA2061B0D0313002227AB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		57EC71B21A9DE0F8003D5850 /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
+		57EC71B31A9DE0F8003D5850 /* crown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crown@2x.png"; sourceTree = "<group>"; };
+		57EC71B71A9DE13E003D5850 /* ROQuiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROQuiz.h; sourceTree = "<group>"; };
+		57EC71B81A9DE13E003D5850 /* ROQuiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROQuiz.m; sourceTree = "<group>"; };
+		57EC71B91A9DE13E003D5850 /* ROQuizItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROQuizItem.h; sourceTree = "<group>"; };
+		57EC71BA1A9DE13E003D5850 /* ROQuizItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROQuizItem.m; sourceTree = "<group>"; };
+		57EC71BB1A9DE13E003D5850 /* ROQuizQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROQuizQuestion.h; sourceTree = "<group>"; };
+		57EC71BC1A9DE13E003D5850 /* ROQuizQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROQuizQuestion.m; sourceTree = "<group>"; };
+		57EC71BD1A9DE13E003D5850 /* ROQuizAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROQuizAnswer.h; sourceTree = "<group>"; };
+		57EC71BE1A9DE13E003D5850 /* ROQuizAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROQuizAnswer.m; sourceTree = "<group>"; };
+		57EC71C71A9DE157003D5850 /* ROQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROQuizViewController.h; sourceTree = "<group>"; };
+		57EC71C81A9DE158003D5850 /* ROQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROQuizViewController.m; sourceTree = "<group>"; };
+		57EC71C91A9DE158003D5850 /* ROQuizItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROQuizItemViewController.h; sourceTree = "<group>"; };
+		57EC71CA1A9DE158003D5850 /* ROQuizItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROQuizItemViewController.m; sourceTree = "<group>"; };
+		57EC71CB1A9DE158003D5850 /* ROQuizStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROQuizStyle.h; sourceTree = "<group>"; };
+		57EC71CC1A9DE158003D5850 /* ROQuizStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROQuizStyle.m; sourceTree = "<group>"; };
+		57EC71CD1A9DE158003D5850 /* ROQuizNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROQuizNavigationController.h; sourceTree = "<group>"; };
+		57EC71CE1A9DE158003D5850 /* ROQuizNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROQuizNavigationController.m; sourceTree = "<group>"; };
+		57EC71CF1A9DE158003D5850 /* ROQuizScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROQuizScoreViewController.h; sourceTree = "<group>"; };
+		57EC71D01A9DE158003D5850 /* ROQuizScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROQuizScoreViewController.m; sourceTree = "<group>"; };
+		57EC71DB1A9DE176003D5850 /* ROQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROQuizViewController.xib; sourceTree = "<group>"; };
+		57EC71DC1A9DE176003D5850 /* ROQuizScoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROQuizScoreViewController.xib; sourceTree = "<group>"; };
+		6DA5546CE057C99082796CED /* Pods-RadarcOnlineSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadarcOnlineSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-RadarcOnlineSDK/Pods-RadarcOnlineSDK.release.xcconfig"; sourceTree = "<group>"; };
+		7BBD09270857A9FC80702750 /* Pods-RadarcOnlineSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadarcOnlineSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RadarcOnlineSDKTests/Pods-RadarcOnlineSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A29DF9A19E7DE76003C745D /* libRadarcOnlineSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRadarcOnlineSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A95D9BC1A8368CA000D53CF /* ROFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFilter.h; sourceTree = "<group>"; };
+		9A95D9BD1A836ACB000D53CF /* ROStringListFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROStringListFilter.h; sourceTree = "<group>"; };
+		9A95D9BE1A838AEA000D53CF /* ROStringListFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROStringListFilter.m; sourceTree = "<group>"; };
+		9A95D9C11A83988A000D53CF /* RODateRangeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RODateRangeFilter.h; sourceTree = "<group>"; };
+		9A95D9C21A83999B000D53CF /* RODateRangeFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RODateRangeFilter.m; sourceTree = "<group>"; };
+		9ACE943619E80690004488EB /* libPods-RadarcOnlineSDK-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RadarcOnlineSDK-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-RadarcOnlineSDK-AFNetworking.a"; sourceTree = "<group>"; };
+		9ACE943719E80690004488EB /* libPods-RadarcOnlineSDK-CocoaSecurity.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RadarcOnlineSDK-CocoaSecurity.a"; path = "Pods/build/Debug-iphoneos/libPods-RadarcOnlineSDK-CocoaSecurity.a"; sourceTree = "<group>"; };
+		9ACE943819E80690004488EB /* libPods-RadarcOnlineSDK-Colours.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RadarcOnlineSDK-Colours.a"; path = "Pods/build/Debug-iphoneos/libPods-RadarcOnlineSDK-Colours.a"; sourceTree = "<group>"; };
+		9ACE943919E80690004488EB /* libPods-RadarcOnlineSDK-CorePlot.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RadarcOnlineSDK-CorePlot.a"; path = "Pods/build/Debug-iphoneos/libPods-RadarcOnlineSDK-CorePlot.a"; sourceTree = "<group>"; };
+		9ACE943A19E80690004488EB /* libPods-RadarcOnlineSDK-DCKeyValueObjectMapping.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RadarcOnlineSDK-DCKeyValueObjectMapping.a"; path = "Pods/build/Debug-iphoneos/libPods-RadarcOnlineSDK-DCKeyValueObjectMapping.a"; sourceTree = "<group>"; };
+		9ACE943D19E80690004488EB /* libPods-RadarcOnlineSDK-ECSlidingViewController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RadarcOnlineSDK-ECSlidingViewController.a"; path = "Pods/build/Debug-iphoneos/libPods-RadarcOnlineSDK-ECSlidingViewController.a"; sourceTree = "<group>"; };
+		9ACE944019E80690004488EB /* libPods-RadarcOnlineSDK-NSUserDefaults-AESEncryptor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RadarcOnlineSDK-NSUserDefaults-AESEncryptor.a"; path = "Pods/build/Debug-iphoneos/libPods-RadarcOnlineSDK-NSUserDefaults-AESEncryptor.a"; sourceTree = "<group>"; };
+		9ACE944119E80690004488EB /* libPods-RadarcOnlineSDK-SDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RadarcOnlineSDK-SDWebImage.a"; path = "Pods/build/Debug-iphoneos/libPods-RadarcOnlineSDK-SDWebImage.a"; sourceTree = "<group>"; };
+		9ACE944219E80690004488EB /* libPods-RadarcOnlineSDK-SVProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RadarcOnlineSDK-SVProgressHUD.a"; path = "Pods/build/Debug-iphoneos/libPods-RadarcOnlineSDK-SVProgressHUD.a"; sourceTree = "<group>"; };
+		9ACE944319E80690004488EB /* libPods-RadarcOnlineSDK-SVPullToRefresh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RadarcOnlineSDK-SVPullToRefresh.a"; path = "Pods/build/Debug-iphoneos/libPods-RadarcOnlineSDK-SVPullToRefresh.a"; sourceTree = "<group>"; };
+		9ACE944419E80690004488EB /* libPods-RadarcOnlineSDK-UIActivityIndicator-for-SDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RadarcOnlineSDK-UIActivityIndicator-for-SDWebImage.a"; path = "Pods/build/Debug-iphoneos/libPods-RadarcOnlineSDK-UIActivityIndicator-for-SDWebImage.a"; sourceTree = "<group>"; };
+		9ACE944619E80690004488EB /* libPods-RadarcOnlineSDK-XMLDictionary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RadarcOnlineSDK-XMLDictionary.a"; path = "Pods/build/Debug-iphoneos/libPods-RadarcOnlineSDK-XMLDictionary.a"; sourceTree = "<group>"; };
+		9ACE945919E807D5004488EB /* ROAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROAction.h; sourceTree = "<group>"; };
+		9ACE945A19E807D5004488EB /* ROFacetimeAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFacetimeAction.h; sourceTree = "<group>"; };
+		9ACE945B19E807D5004488EB /* ROFacetimeAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFacetimeAction.m; sourceTree = "<group>"; };
+		9ACE945C19E807D5004488EB /* ROMailAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROMailAction.h; sourceTree = "<group>"; };
+		9ACE945D19E807D5004488EB /* ROMailAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROMailAction.m; sourceTree = "<group>"; };
+		9ACE945E19E807D5004488EB /* ROMapAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROMapAction.h; sourceTree = "<group>"; };
+		9ACE945F19E807D5004488EB /* ROMapAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROMapAction.m; sourceTree = "<group>"; };
+		9ACE946019E807D5004488EB /* ROMapDirectionsAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROMapDirectionsAction.h; sourceTree = "<group>"; };
+		9ACE946119E807D5004488EB /* ROMapDirectionsAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROMapDirectionsAction.m; sourceTree = "<group>"; };
+		9ACE946219E807D5004488EB /* ROMapSearchAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROMapSearchAction.h; sourceTree = "<group>"; };
+		9ACE946319E807D5004488EB /* ROMapSearchAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROMapSearchAction.m; sourceTree = "<group>"; };
+		9ACE946419E807D5004488EB /* RONavigationAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RONavigationAction.h; sourceTree = "<group>"; };
+		9ACE946519E807D5004488EB /* RONavigationAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RONavigationAction.m; sourceTree = "<group>"; };
+		9ACE946619E807D5004488EB /* ROPhoneAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROPhoneAction.h; sourceTree = "<group>"; };
+		9ACE946719E807D5004488EB /* ROPhoneAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROPhoneAction.m; sourceTree = "<group>"; };
+		9ACE946819E807D5004488EB /* ROSMSAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROSMSAction.h; sourceTree = "<group>"; };
+		9ACE946919E807D5004488EB /* ROSMSAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROSMSAction.m; sourceTree = "<group>"; };
+		9ACE946A19E807D5004488EB /* ROUriAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROUriAction.h; sourceTree = "<group>"; };
+		9ACE946B19E807D5004488EB /* ROUriAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROUriAction.m; sourceTree = "<group>"; };
+		9ACE946C19E807D5004488EB /* ROWebBrowserAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROWebBrowserAction.h; sourceTree = "<group>"; };
+		9ACE946D19E807D5004488EB /* ROWebBrowserAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROWebBrowserAction.m; sourceTree = "<group>"; };
+		9ACE946E19E807D5004488EB /* ROYoutubeAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROYoutubeAction.h; sourceTree = "<group>"; };
+		9ACE946F19E807D5004488EB /* ROYoutubeAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROYoutubeAction.m; sourceTree = "<group>"; };
+		9ACE947119E807D5004488EB /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		9ACE947219E807D5004488EB /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		9ACE947319E807D5004488EB /* arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@3x.png"; sourceTree = "<group>"; };
+		9ACE947419E807D5004488EB /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		9ACE947519E807D5004488EB /* email@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email@2x.png"; sourceTree = "<group>"; };
+		9ACE947619E807D5004488EB /* email@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email@3x.png"; sourceTree = "<group>"; };
+		9ACE947719E807D5004488EB /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		9ACE947819E807D5004488EB /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@2x.png"; sourceTree = "<group>"; };
+		9ACE947919E807D5004488EB /* location@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@3x.png"; sourceTree = "<group>"; };
+		9ACE947A19E807D5004488EB /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
+		9ACE947B19E807D5004488EB /* message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message@2x.png"; sourceTree = "<group>"; };
+		9ACE947C19E807D5004488EB /* message@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message@3x.png"; sourceTree = "<group>"; };
+		9ACE947D19E807D5004488EB /* NavMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavMenu.png; sourceTree = "<group>"; };
+		9ACE947E19E807D5004488EB /* NavMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavMenu@2x.png"; sourceTree = "<group>"; };
+		9ACE947F19E807D5004488EB /* NoPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoPhoto.png; sourceTree = "<group>"; };
+		9ACE948019E807D5004488EB /* NoPhoto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NoPhoto@2x.png"; sourceTree = "<group>"; };
+		9ACE948119E807D5004488EB /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
+		9ACE948219E807D5004488EB /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@2x.png"; sourceTree = "<group>"; };
+		9ACE948319E807D5004488EB /* phone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone@3x.png"; sourceTree = "<group>"; };
+		9ACE948419E807D5004488EB /* PlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlaceHolder.png; sourceTree = "<group>"; };
+		9ACE948519E807D5004488EB /* PlaceHolder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlaceHolder@2x.png"; sourceTree = "<group>"; };
+		9ACE948619E807D5004488EB /* Playvideo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Playvideo.png; sourceTree = "<group>"; };
+		9ACE948719E807D5004488EB /* Playvideo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Playvideo@2x.png"; sourceTree = "<group>"; };
+		9ACE948819E807D5004488EB /* radarconline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radarconline.png; sourceTree = "<group>"; };
+		9ACE948919E807D5004488EB /* radarconline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radarconline@2x.png"; sourceTree = "<group>"; };
+		9ACE948A19E807D5004488EB /* radarconline@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radarconline@3x.png"; sourceTree = "<group>"; };
+		9ACE948B19E807D5004488EB /* url.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = url.png; sourceTree = "<group>"; };
+		9ACE948C19E807D5004488EB /* url@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "url@2x.png"; sourceTree = "<group>"; };
+		9ACE948D19E807D5004488EB /* url@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "url@3x.png"; sourceTree = "<group>"; };
+		9ACE949E19E807D5004488EB /* ROBasicAuthLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROBasicAuthLoginService.h; sourceTree = "<group>"; };
+		9ACE949F19E807D5004488EB /* ROBasicAuthLoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROBasicAuthLoginService.m; sourceTree = "<group>"; };
+		9ACE94A019E807D5004488EB /* ROLoginResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROLoginResponse.h; sourceTree = "<group>"; };
+		9ACE94A119E807D5004488EB /* ROLoginResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROLoginResponse.m; sourceTree = "<group>"; };
+		9ACE94A219E807D5004488EB /* ROLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROLoginService.h; sourceTree = "<group>"; };
+		9ACE94A319E807D5004488EB /* ROLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROLoginViewController.h; sourceTree = "<group>"; };
+		9ACE94A419E807D5004488EB /* ROLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROLoginViewController.m; sourceTree = "<group>"; };
+		9ACE94A719E807D6004488EB /* RONavigationBasicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RONavigationBasicController.h; sourceTree = "<group>"; };
+		9ACE94A819E807D6004488EB /* RONavigationBasicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RONavigationBasicController.m; sourceTree = "<group>"; };
+		9ACE94A919E807D6004488EB /* RONavMenuBasicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RONavMenuBasicTableViewController.h; sourceTree = "<group>"; };
+		9ACE94AA19E807D6004488EB /* RONavMenuBasicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RONavMenuBasicTableViewController.m; sourceTree = "<group>"; };
+		9ACE94B019E807D6004488EB /* RONavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RONavigationViewController.h; sourceTree = "<group>"; };
+		9ACE94B119E807D6004488EB /* RONavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RONavigationViewController.m; sourceTree = "<group>"; };
+		9ACE94B319E807D6004488EB /* RONavigationMainSlidingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RONavigationMainSlidingController.h; sourceTree = "<group>"; };
+		9ACE94B419E807D6004488EB /* RONavigationMainSlidingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RONavigationMainSlidingController.m; sourceTree = "<group>"; };
+		9ACE94B519E807D6004488EB /* RONavigationMenuSlidingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RONavigationMenuSlidingController.h; sourceTree = "<group>"; };
+		9ACE94B619E807D6004488EB /* RONavigationMenuSlidingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RONavigationMenuSlidingController.m; sourceTree = "<group>"; };
+		9ACE94B719E807D6004488EB /* RONavMenuSlidingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RONavMenuSlidingTableViewController.h; sourceTree = "<group>"; };
+		9ACE94B819E807D6004488EB /* RONavMenuSlidingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RONavMenuSlidingTableViewController.m; sourceTree = "<group>"; };
+		9ACE94B919E807D6004488EB /* ROBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROBaseViewController.h; sourceTree = "<group>"; };
+		9ACE94BA19E807D6004488EB /* ROBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROBaseViewController.m; sourceTree = "<group>"; };
+		9ACE94BD19E807D6004488EB /* ROKillSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROKillSwitchViewController.h; sourceTree = "<group>"; };
+		9ACE94BE19E807D6004488EB /* ROKillSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROKillSwitchViewController.m; sourceTree = "<group>"; };
+		9ACE94C119E807D6004488EB /* ROViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROViewController.h; sourceTree = "<group>"; };
+		9ACE94C219E807D6004488EB /* ROViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROViewController.m; sourceTree = "<group>"; };
+		9ACE94C619E807D6004488EB /* ROBingDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROBingDatasource.h; sourceTree = "<group>"; };
+		9ACE94C719E807D6004488EB /* ROBingDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROBingDatasource.m; sourceTree = "<group>"; };
+		9ACE94C819E807D6004488EB /* ROCollectionCloudDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROCollectionCloudDatasource.h; sourceTree = "<group>"; };
+		9ACE94C919E807D6004488EB /* ROCollectionCloudDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROCollectionCloudDatasource.m; sourceTree = "<group>"; };
+		9ACE94CA19E807D6004488EB /* ROCollectionLocalDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROCollectionLocalDatasource.h; sourceTree = "<group>"; };
+		9ACE94CB19E807D6004488EB /* ROCollectionLocalDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROCollectionLocalDatasource.m; sourceTree = "<group>"; };
+		9ACE94CC19E807D6004488EB /* RODatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RODatasource.h; sourceTree = "<group>"; };
+		9ACE94CD19E807D6004488EB /* ROFlickrDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFlickrDatasource.h; sourceTree = "<group>"; };
+		9ACE94CE19E807D6004488EB /* ROFlickrDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFlickrDatasource.m; sourceTree = "<group>"; };
+		9ACE94CF19E807D6004488EB /* ROHtmlDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROHtmlDatasource.h; sourceTree = "<group>"; };
+		9ACE94D019E807D6004488EB /* ROHtmlDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROHtmlDatasource.m; sourceTree = "<group>"; };
+		9ACE94D119E807D6004488EB /* ROOptionsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROOptionsFilter.h; sourceTree = "<group>"; };
+		9ACE94D219E807D6004488EB /* ROOptionsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROOptionsFilter.m; sourceTree = "<group>"; };
+		9ACE94D319E807D6004488EB /* ROPagination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROPagination.h; sourceTree = "<group>"; };
+		9ACE94D419E807D6004488EB /* RORSSDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RORSSDatasource.h; sourceTree = "<group>"; };
+		9ACE94D519E807D6004488EB /* RORSSDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RORSSDatasource.m; sourceTree = "<group>"; };
+		9ACE94D619E807D6004488EB /* ROYoutubeDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROYoutubeDatasource.h; sourceTree = "<group>"; };
+		9ACE94D719E807D6004488EB /* ROYoutubeDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROYoutubeDatasource.m; sourceTree = "<group>"; };
+		9ACE94DA19E807D6004488EB /* ROFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFeed.h; sourceTree = "<group>"; };
+		9ACE94DB19E807D6004488EB /* ROFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFeed.m; sourceTree = "<group>"; };
+		9ACE94DC19E807D6004488EB /* ROFeedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFeedImage.h; sourceTree = "<group>"; };
+		9ACE94DD19E807D6004488EB /* ROFeedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFeedImage.m; sourceTree = "<group>"; };
+		9ACE94DE19E807D6004488EB /* ROFeedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFeedItem.h; sourceTree = "<group>"; };
+		9ACE94DF19E807D6004488EB /* ROFeedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFeedItem.m; sourceTree = "<group>"; };
+		9ACE94E019E807D6004488EB /* ROFeedItemAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFeedItemAuthor.h; sourceTree = "<group>"; };
+		9ACE94E119E807D6004488EB /* ROFeedItemAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFeedItemAuthor.m; sourceTree = "<group>"; };
+		9ACE94E219E807D6004488EB /* ROItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROItemCell.h; sourceTree = "<group>"; };
+		9ACE94E319E807D6004488EB /* ROItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROItemCell.m; sourceTree = "<group>"; };
+		9ACE94E419E807D6004488EB /* ROObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROObject.h; sourceTree = "<group>"; };
+		9ACE94E519E807D6004488EB /* ROObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROObject.m; sourceTree = "<group>"; };
+		9ACE94E619E807D6004488EB /* ROPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROPage.h; sourceTree = "<group>"; };
+		9ACE94E719E807D6004488EB /* ROPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROPage.m; sourceTree = "<group>"; };
+		9ACE94E819E807D6004488EB /* ROWebContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROWebContent.h; sourceTree = "<group>"; };
+		9ACE94E919E807D6004488EB /* ROWebContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROWebContent.m; sourceTree = "<group>"; };
+		9ACE94EA19E807D6004488EB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9ACE94EE19E807D6004488EB /* ROHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		9ACE94EF19E807D6004488EB /* ROKillSwitchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROKillSwitchViewController.xib; sourceTree = "<group>"; };
+		9ACE94F019E807D6004488EB /* ROLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROLoginViewController.xib; sourceTree = "<group>"; };
+		9ACE94F219E807D6004488EB /* ROTableViewCellStyleDetailImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROTableViewCellStyleDetailImage.xib; sourceTree = "<group>"; };
+		9ACE94F319E807D6004488EB /* ROTableViewCellStyleDetailText.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROTableViewCellStyleDetailText.xib; sourceTree = "<group>"; };
+		9ACE94F419E807D6004488EB /* ROTableViewCellStylePhotoTitle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROTableViewCellStylePhotoTitle.xib; sourceTree = "<group>"; };
+		9ACE94F519E807D6004488EB /* ROTableViewCellStylePhotoTitleBottomDescription.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROTableViewCellStylePhotoTitleBottomDescription.xib; sourceTree = "<group>"; };
+		9ACE94F619E807D6004488EB /* ROTableViewCellStylePhotoTitleDescription.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROTableViewCellStylePhotoTitleDescription.xib; sourceTree = "<group>"; };
+		9ACE94F719E807D6004488EB /* ROTableViewCellStyleTitle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROTableViewCellStyleTitle.xib; sourceTree = "<group>"; };
+		9ACE94F819E807D6004488EB /* ROTableViewCellStyleTitleDescription.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ROTableViewCellStyleTitleDescription.xib; sourceTree = "<group>"; };
+		9ACE94F919E807D6004488EB /* ROAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROAppDelegate.h; sourceTree = "<group>"; };
+		9ACE94FA19E807D6004488EB /* ROAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROAppDelegate.m; sourceTree = "<group>"; };
+		9ACE94FD19E807D6004488EB /* ROCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROCache.h; sourceTree = "<group>"; };
+		9ACE94FE19E807D6004488EB /* ROCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROCache.m; sourceTree = "<group>"; };
+		9ACE950019E807D6004488EB /* NSArray+RO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RO.h"; sourceTree = "<group>"; };
+		9ACE950119E807D6004488EB /* NSArray+RO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RO.m"; sourceTree = "<group>"; };
+		9ACE950219E807D6004488EB /* NSDate+RO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RO.h"; sourceTree = "<group>"; };
+		9ACE950319E807D6004488EB /* NSDate+RO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RO.m"; sourceTree = "<group>"; };
+		9ACE950419E807D6004488EB /* NSDecimalNumber+RO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+RO.h"; sourceTree = "<group>"; };
+		9ACE950519E807D6004488EB /* NSDecimalNumber+RO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+RO.m"; sourceTree = "<group>"; };
+		9ACE950619E807D6004488EB /* NSString+RO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RO.h"; sourceTree = "<group>"; };
+		9ACE950719E807D6004488EB /* NSString+RO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RO.m"; sourceTree = "<group>"; };
+		9ACE950819E807D6004488EB /* UIAlertView+RO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+RO.h"; sourceTree = "<group>"; };
+		9ACE950919E807D6004488EB /* UIAlertView+RO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+RO.m"; sourceTree = "<group>"; };
+		9ACE950A19E807D6004488EB /* UIView+RO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RO.h"; sourceTree = "<group>"; };
+		9ACE950B19E807D6004488EB /* UIView+RO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RO.m"; sourceTree = "<group>"; };
+		9ACE950D19E807D6004488EB /* ROFeedBaseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFeedBaseParser.h; sourceTree = "<group>"; };
+		9ACE950E19E807D6004488EB /* ROFeedBaseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFeedBaseParser.m; sourceTree = "<group>"; };
+		9ACE950F19E807D6004488EB /* ROFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROFeedParser.h; sourceTree = "<group>"; };
+		9ACE951019E807D6004488EB /* ROFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROFeedParser.m; sourceTree = "<group>"; };
+		9ACE951119E807D6004488EB /* RORSSDictionaryParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RORSSDictionaryParser.h; sourceTree = "<group>"; };
+		9ACE951219E807D6004488EB /* RORSSDictionaryParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RORSSDictionaryParser.m; sourceTree = "<group>"; };
+		9ACE951319E807D6004488EB /* RORSSNameSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RORSSNameSpace.h; sourceTree = "<group>"; };
+		9ACE951519E807D6004488EB /* ROStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROStyle.h; sourceTree = "<group>"; };
+		9ACE951619E807D6004488EB /* ROStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROStyle.m; sourceTree = "<group>"; };
+		9ACE951919E807D6004488EB /* ROCellConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROCellConstants.h; sourceTree = "<group>"; };
+		9ACE951A19E807D6004488EB /* ROCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROCollectionViewCell.h; sourceTree = "<group>"; };
+		9ACE951B19E807D6004488EB /* ROCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROCollectionViewCell.m; sourceTree = "<group>"; };
+		9ACE951C19E807D6004488EB /* ROHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROHeaderTableViewCell.h; sourceTree = "<group>"; };
+		9ACE951D19E807D6004488EB /* ROHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROHeaderTableViewCell.m; sourceTree = "<group>"; };
+		9ACE951E19E807D6004488EB /* ROImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROImageTableViewCell.h; sourceTree = "<group>"; };
+		9ACE951F19E807D6004488EB /* ROImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROImageTableViewCell.m; sourceTree = "<group>"; };
+		9ACE952219E807D6004488EB /* ROTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROTableViewCell.h; sourceTree = "<group>"; };
+		9ACE952319E807D6004488EB /* ROTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROTableViewCell.m; sourceTree = "<group>"; };
+		9ACE952419E807D6004488EB /* ROTextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROTextTableViewCell.h; sourceTree = "<group>"; };
+		9ACE952519E807D6004488EB /* ROTextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROTextTableViewCell.m; sourceTree = "<group>"; };
+		9ACE952719E807D6004488EB /* ROChartSerie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROChartSerie.h; sourceTree = "<group>"; };
+		9ACE952819E807D6004488EB /* ROChartSerie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROChartSerie.m; sourceTree = "<group>"; };
+		9ACE952919E807D6004488EB /* ROChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROChartView.h; sourceTree = "<group>"; };
+		9ACE952A19E807D6004488EB /* ROChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROChartView.m; sourceTree = "<group>"; };
+		9ACE952B19E807D6004488EB /* ROLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROLabel.h; sourceTree = "<group>"; };
+		9ACE952C19E807D6004488EB /* ROLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROLabel.m; sourceTree = "<group>"; };
+		9ACE966419E80D11004488EB /* RadarcOnlineSDKResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadarcOnlineSDKResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ACE966719E80D11004488EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5D417BDD437E3D3DF7390F2 /* libPods-RadarcOnlineSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RadarcOnlineSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A29DF9719E7DE76003C745D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A6A6521A9131A300663FA3 /* libPods-RadarcOnlineSDK-ActionSheetPicker-3.0.a in Frameworks */,
+				9ACE944719E80690004488EB /* libPods-RadarcOnlineSDK-AFNetworking.a in Frameworks */,
+				9ACE944819E80690004488EB /* libPods-RadarcOnlineSDK-CocoaSecurity.a in Frameworks */,
+				9ACE944919E80690004488EB /* libPods-RadarcOnlineSDK-Colours.a in Frameworks */,
+				9ACE944A19E80690004488EB /* libPods-RadarcOnlineSDK-CorePlot.a in Frameworks */,
+				9ACE944B19E80690004488EB /* libPods-RadarcOnlineSDK-DCKeyValueObjectMapping.a in Frameworks */,
+				9ACE944E19E80690004488EB /* libPods-RadarcOnlineSDK-ECSlidingViewController.a in Frameworks */,
+				9ACE945119E80690004488EB /* libPods-RadarcOnlineSDK-NSUserDefaults-AESEncryptor.a in Frameworks */,
+				9ACE945219E80690004488EB /* libPods-RadarcOnlineSDK-SDWebImage.a in Frameworks */,
+				9ACE945319E80690004488EB /* libPods-RadarcOnlineSDK-SVProgressHUD.a in Frameworks */,
+				9ACE945419E80690004488EB /* libPods-RadarcOnlineSDK-SVPullToRefresh.a in Frameworks */,
+				9ACE945519E80690004488EB /* libPods-RadarcOnlineSDK-UIActivityIndicator-for-SDWebImage.a in Frameworks */,
+				9ACE945719E80690004488EB /* libPods-RadarcOnlineSDK-XMLDictionary.a in Frameworks */,
+				37A67CC4998E61F5DC3E4FB9 /* libPods-RadarcOnlineSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACE966119E80D11004488EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49A2471B557EADC9A636A9B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CEF1BEB725DBFC911BEE13C /* Pods-RadarcOnlineSDK.debug.xcconfig */,
+				6DA5546CE057C99082796CED /* Pods-RadarcOnlineSDK.release.xcconfig */,
+				7BBD09270857A9FC80702750 /* Pods-RadarcOnlineSDKTests.debug.xcconfig */,
+				46D6FA012769648A7F5103A2 /* Pods-RadarcOnlineSDKTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		571521961AC7F828009F6118 /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				571521971AC7F828009F6118 /* RODataLoader.h */,
+				571521981AC7F828009F6118 /* ROListDataLoader.h */,
+				571521991AC7F828009F6118 /* ROListDataLoader.m */,
+				5715219A1AC7F828009F6118 /* ROSingleDataLoader.h */,
+				5715219B1AC7F828009F6118 /* ROSingleDataLoader.m */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		571521A11AC7F969009F6118 /* CellDescriptors */ = {
+			isa = PBXGroup;
+			children = (
+				571521A21AC7F969009F6118 /* ROCellDescriptor.h */,
+				571521A31AC7F969009F6118 /* ROHeaderCellDescriptor.h */,
+				571521A41AC7F969009F6118 /* ROHeaderCellDescriptor.m */,
+				571521A51AC7F969009F6118 /* ROImageCellDescriptor.h */,
+				571521A61AC7F969009F6118 /* ROImageCellDescriptor.m */,
+				571521A71AC7F969009F6118 /* ROTextCellDescriptor.h */,
+				571521A81AC7F969009F6118 /* ROTextCellDescriptor.m */,
+			);
+			path = CellDescriptors;
+			sourceTree = "<group>";
+		};
+		571521B01AC7FCA8009F6118 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				571521B11AC7FCA8009F6118 /* ROCustomTableViewController.h */,
+				571521B21AC7FCA8009F6118 /* ROCustomTableViewController.m */,
+				571521B31AC7FCA8009F6118 /* ROTableViewController.h */,
+				571521B41AC7FCA8009F6118 /* ROTableViewController.m */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		571521B91AC7FD00009F6118 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				571521BA1AC7FD00009F6118 /* ROChartViewController.h */,
+				571521BB1AC7FD00009F6118 /* ROChartViewController.m */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		571521BE1AC7FDB1009F6118 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				571521BF1AC7FDB1009F6118 /* ROCollectionViewController.h */,
+				571521C01AC7FDB1009F6118 /* ROCollectionViewController.m */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		571B1F511B149640008591AD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				571B1F521B1496B3008591AD /* RORestClient.h */,
+				571B1F531B1496B3008591AD /* RORestClient.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		571F44921A8B681100A538B3 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				57A6A65C1A9264F100663FA3 /* ROFormField.h */,
+				571F449A1A8B681100A538B3 /* ROFormViewController.h */,
+				571F449B1A8B681100A538B3 /* ROFormViewController.m */,
+				571F449C1A8B681100A538B3 /* ROOptionsViewController.h */,
+				571F449D1A8B681100A538B3 /* ROOptionsViewController.m */,
+				57A6A6541A924E6B00663FA3 /* ROFormFieldDateRange.h */,
+				57A6A6551A924E6B00663FA3 /* ROFormFieldDateRange.m */,
+				57A6A6581A925D7900663FA3 /* ROFormFieldSelection.h */,
+				57A6A6591A925D7900663FA3 /* ROFormFieldSelection.m */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		5762FB5A1AC1B9E700D50199 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				5762FB5B1AC1B9E700D50199 /* ROError.h */,
+				5762FB5C1AC1B9E700D50199 /* ROError.m */,
+				5762FB5D1AC1B9E700D50199 /* ROErrorManager.h */,
+				5762FB5E1AC1B9E700D50199 /* ROErrorManager.m */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		57962A7D1AC93CD5005BE423 /* Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+				57962A841AC93CD5005BE423 /* ROBehavior.h */,
+				57962A7E1AC93CD5005BE423 /* Filter */,
+				57962A811AC93CD5005BE423 /* Refresh */,
+				57962A851AC93CD5005BE423 /* Search */,
+				57962A881AC93CD5005BE423 /* Share */,
+			);
+			path = Behaviors;
+			sourceTree = "<group>";
+		};
+		57962A7E1AC93CD5005BE423 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				57962A7F1AC93CD5005BE423 /* ROFilterBehavior.h */,
+				57962A801AC93CD5005BE423 /* ROFilterBehavior.m */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		57962A811AC93CD5005BE423 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				57962A821AC93CD5005BE423 /* RORefreshBehavior.h */,
+				57962A831AC93CD5005BE423 /* RORefreshBehavior.m */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		57962A851AC93CD5005BE423 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				57962A861AC93CD5005BE423 /* ROSearchBehavior.h */,
+				57962A871AC93CD5005BE423 /* ROSearchBehavior.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		57962A881AC93CD5005BE423 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				57962A891AC93CD5005BE423 /* ROShareBehavior.h */,
+				57962A8A1AC93CD5005BE423 /* ROShareBehavior.m */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		57EC71B11A9DE0E1003D5850 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				57EC71B61A9DE121003D5850 /* Model */,
+				57EC71C71A9DE157003D5850 /* ROQuizViewController.h */,
+				57EC71C81A9DE158003D5850 /* ROQuizViewController.m */,
+				57EC71C91A9DE158003D5850 /* ROQuizItemViewController.h */,
+				57EC71CA1A9DE158003D5850 /* ROQuizItemViewController.m */,
+				57EC71CD1A9DE158003D5850 /* ROQuizNavigationController.h */,
+				57EC71CE1A9DE158003D5850 /* ROQuizNavigationController.m */,
+				57EC71CF1A9DE158003D5850 /* ROQuizScoreViewController.h */,
+				57EC71D01A9DE158003D5850 /* ROQuizScoreViewController.m */,
+				57EC71CB1A9DE158003D5850 /* ROQuizStyle.h */,
+				57EC71CC1A9DE158003D5850 /* ROQuizStyle.m */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		57EC71B61A9DE121003D5850 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57EC71B71A9DE13E003D5850 /* ROQuiz.h */,
+				57EC71B81A9DE13E003D5850 /* ROQuiz.m */,
+				57EC71B91A9DE13E003D5850 /* ROQuizItem.h */,
+				57EC71BA1A9DE13E003D5850 /* ROQuizItem.m */,
+				57EC71BB1A9DE13E003D5850 /* ROQuizQuestion.h */,
+				57EC71BC1A9DE13E003D5850 /* ROQuizQuestion.m */,
+				57EC71BD1A9DE13E003D5850 /* ROQuizAnswer.h */,
+				57EC71BE1A9DE13E003D5850 /* ROQuizAnswer.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9A29DF9119E7DE76003C745D = {
+			isa = PBXGroup;
+			children = (
+				9A29DF9C19E7DE76003C745D /* RadarcOnlineSDK */,
+				9ACE966519E80D11004488EB /* RadarcOnlineSDKResources */,
+				9A29DF9B19E7DE76003C745D /* Products */,
+				49A2471B557EADC9A636A9B3 /* Pods */,
+				B24FF6485FAC2C60856BE571 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9A29DF9B19E7DE76003C745D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A29DF9A19E7DE76003C745D /* libRadarcOnlineSDK.a */,
+				9ACE966419E80D11004488EB /* RadarcOnlineSDKResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A29DF9C19E7DE76003C745D /* RadarcOnlineSDK */ = {
+			isa = PBXGroup;
+			children = (
+				571B1F511B149640008591AD /* Services */,
+				57DBA2061B0D0313002227AB /* PrefixHeader.pch */,
+				57962A7D1AC93CD5005BE423 /* Behaviors */,
+				9ACE945819E807D5004488EB /* Actions */,
+				9ACE947019E807D5004488EB /* Assets */,
+				9ACE948E19E807D5004488EB /* Controllers */,
+				9ACE94C519E807D6004488EB /* Datasources */,
+				9ACE94D819E807D6004488EB /* Models */,
+				9ACE94EA19E807D6004488EB /* PrefixHeader.pch */,
+				9ACE94EB19E807D6004488EB /* Resources */,
+				9ACE94F919E807D6004488EB /* ROAppDelegate.h */,
+				9ACE94FA19E807D6004488EB /* ROAppDelegate.m */,
+				9ACE94FB19E807D6004488EB /* Utils */,
+				9ACE951719E807D6004488EB /* Views */,
+			);
+			path = RadarcOnlineSDK;
+			sourceTree = "<group>";
+		};
+		9A95D9BB1A836719000D53CF /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				9A95D9BC1A8368CA000D53CF /* ROFilter.h */,
+				9A95D9BD1A836ACB000D53CF /* ROStringListFilter.h */,
+				9A95D9BE1A838AEA000D53CF /* ROStringListFilter.m */,
+				9A95D9C11A83988A000D53CF /* RODateRangeFilter.h */,
+				9A95D9C21A83999B000D53CF /* RODateRangeFilter.m */,
+			);
+			name = Filter;
+			sourceTree = "<group>";
+		};
+		9ACE945819E807D5004488EB /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE945919E807D5004488EB /* ROAction.h */,
+				9ACE945A19E807D5004488EB /* ROFacetimeAction.h */,
+				9ACE945B19E807D5004488EB /* ROFacetimeAction.m */,
+				9ACE945C19E807D5004488EB /* ROMailAction.h */,
+				9ACE945D19E807D5004488EB /* ROMailAction.m */,
+				9ACE945E19E807D5004488EB /* ROMapAction.h */,
+				9ACE945F19E807D5004488EB /* ROMapAction.m */,
+				9ACE946019E807D5004488EB /* ROMapDirectionsAction.h */,
+				9ACE946119E807D5004488EB /* ROMapDirectionsAction.m */,
+				9ACE946219E807D5004488EB /* ROMapSearchAction.h */,
+				9ACE946319E807D5004488EB /* ROMapSearchAction.m */,
+				9ACE946419E807D5004488EB /* RONavigationAction.h */,
+				9ACE946519E807D5004488EB /* RONavigationAction.m */,
+				9ACE946619E807D5004488EB /* ROPhoneAction.h */,
+				9ACE946719E807D5004488EB /* ROPhoneAction.m */,
+				9ACE946819E807D5004488EB /* ROSMSAction.h */,
+				9ACE946919E807D5004488EB /* ROSMSAction.m */,
+				9ACE946A19E807D5004488EB /* ROUriAction.h */,
+				9ACE946B19E807D5004488EB /* ROUriAction.m */,
+				9ACE946C19E807D5004488EB /* ROWebBrowserAction.h */,
+				9ACE946D19E807D5004488EB /* ROWebBrowserAction.m */,
+				9ACE946E19E807D5004488EB /* ROYoutubeAction.h */,
+				9ACE946F19E807D5004488EB /* ROYoutubeAction.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		9ACE947019E807D5004488EB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				57EC71B21A9DE0F8003D5850 /* crown.png */,
+				57EC71B31A9DE0F8003D5850 /* crown@2x.png */,
+				571F448A1A8B67A100A538B3 /* filter.png */,
+				571F448B1A8B67A100A538B3 /* filter@2x.png */,
+				571F448C1A8B67A100A538B3 /* filterClear.png */,
+				571F448D1A8B67A100A538B3 /* filterClear@2x.png */,
+				9ACE947119E807D5004488EB /* arrow.png */,
+				9ACE947219E807D5004488EB /* arrow@2x.png */,
+				9ACE947319E807D5004488EB /* arrow@3x.png */,
+				9ACE947419E807D5004488EB /* email.png */,
+				9ACE947519E807D5004488EB /* email@2x.png */,
+				9ACE947619E807D5004488EB /* email@3x.png */,
+				9ACE947719E807D5004488EB /* location.png */,
+				9ACE947819E807D5004488EB /* location@2x.png */,
+				9ACE947919E807D5004488EB /* location@3x.png */,
+				9ACE947A19E807D5004488EB /* message.png */,
+				9ACE947B19E807D5004488EB /* message@2x.png */,
+				9ACE947C19E807D5004488EB /* message@3x.png */,
+				9ACE947D19E807D5004488EB /* NavMenu.png */,
+				9ACE947E19E807D5004488EB /* NavMenu@2x.png */,
+				9ACE947F19E807D5004488EB /* NoPhoto.png */,
+				9ACE948019E807D5004488EB /* NoPhoto@2x.png */,
+				9ACE948119E807D5004488EB /* phone.png */,
+				9ACE948219E807D5004488EB /* phone@2x.png */,
+				9ACE948319E807D5004488EB /* phone@3x.png */,
+				9ACE948419E807D5004488EB /* PlaceHolder.png */,
+				9ACE948519E807D5004488EB /* PlaceHolder@2x.png */,
+				9ACE948619E807D5004488EB /* Playvideo.png */,
+				9ACE948719E807D5004488EB /* Playvideo@2x.png */,
+				9ACE948819E807D5004488EB /* radarconline.png */,
+				9ACE948919E807D5004488EB /* radarconline@2x.png */,
+				9ACE948A19E807D5004488EB /* radarconline@3x.png */,
+				9ACE948B19E807D5004488EB /* url.png */,
+				9ACE948C19E807D5004488EB /* url@2x.png */,
+				9ACE948D19E807D5004488EB /* url@3x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9ACE948E19E807D5004488EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				571521BE1AC7FDB1009F6118 /* Collection */,
+				571521B91AC7FD00009F6118 /* Chart */,
+				571521B01AC7FCA8009F6118 /* Table */,
+				57EC71B11A9DE0E1003D5850 /* Quiz */,
+				571F44921A8B681100A538B3 /* Forms */,
+				9ACE949D19E807D5004488EB /* Login */,
+				9ACE94A519E807D5004488EB /* Navigation */,
+				9ACE94B919E807D6004488EB /* ROBaseViewController.h */,
+				9ACE94BA19E807D6004488EB /* ROBaseViewController.m */,
+				9ACE94BD19E807D6004488EB /* ROKillSwitchViewController.h */,
+				9ACE94BE19E807D6004488EB /* ROKillSwitchViewController.m */,
+				9ACE94C119E807D6004488EB /* ROViewController.h */,
+				9ACE94C219E807D6004488EB /* ROViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9ACE949D19E807D5004488EB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE949E19E807D5004488EB /* ROBasicAuthLoginService.h */,
+				9ACE949F19E807D5004488EB /* ROBasicAuthLoginService.m */,
+				9ACE94A019E807D5004488EB /* ROLoginResponse.h */,
+				9ACE94A119E807D5004488EB /* ROLoginResponse.m */,
+				9ACE94A219E807D5004488EB /* ROLoginService.h */,
+				9ACE94A319E807D5004488EB /* ROLoginViewController.h */,
+				9ACE94A419E807D5004488EB /* ROLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9ACE94A519E807D5004488EB /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE94A619E807D6004488EB /* Basic */,
+				9ACE94B019E807D6004488EB /* RONavigationViewController.h */,
+				9ACE94B119E807D6004488EB /* RONavigationViewController.m */,
+				9ACE94B219E807D6004488EB /* Sliding */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		9ACE94A619E807D6004488EB /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE94A719E807D6004488EB /* RONavigationBasicController.h */,
+				9ACE94A819E807D6004488EB /* RONavigationBasicController.m */,
+				9ACE94A919E807D6004488EB /* RONavMenuBasicTableViewController.h */,
+				9ACE94AA19E807D6004488EB /* RONavMenuBasicTableViewController.m */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		9ACE94B219E807D6004488EB /* Sliding */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE94B319E807D6004488EB /* RONavigationMainSlidingController.h */,
+				9ACE94B419E807D6004488EB /* RONavigationMainSlidingController.m */,
+				9ACE94B519E807D6004488EB /* RONavigationMenuSlidingController.h */,
+				9ACE94B619E807D6004488EB /* RONavigationMenuSlidingController.m */,
+				9ACE94B719E807D6004488EB /* RONavMenuSlidingTableViewController.h */,
+				9ACE94B819E807D6004488EB /* RONavMenuSlidingTableViewController.m */,
+			);
+			path = Sliding;
+			sourceTree = "<group>";
+		};
+		9ACE94C519E807D6004488EB /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				571521961AC7F828009F6118 /* Loaders */,
+				9A95D9BB1A836719000D53CF /* Filter */,
+				9ACE94C619E807D6004488EB /* ROBingDatasource.h */,
+				9ACE94C719E807D6004488EB /* ROBingDatasource.m */,
+				9ACE94C819E807D6004488EB /* ROCollectionCloudDatasource.h */,
+				9ACE94C919E807D6004488EB /* ROCollectionCloudDatasource.m */,
+				9ACE94CA19E807D6004488EB /* ROCollectionLocalDatasource.h */,
+				9ACE94CB19E807D6004488EB /* ROCollectionLocalDatasource.m */,
+				9ACE94CC19E807D6004488EB /* RODatasource.h */,
+				9ACE94CD19E807D6004488EB /* ROFlickrDatasource.h */,
+				9ACE94CE19E807D6004488EB /* ROFlickrDatasource.m */,
+				9ACE94CF19E807D6004488EB /* ROHtmlDatasource.h */,
+				9ACE94D019E807D6004488EB /* ROHtmlDatasource.m */,
+				9ACE94D119E807D6004488EB /* ROOptionsFilter.h */,
+				9ACE94D219E807D6004488EB /* ROOptionsFilter.m */,
+				9ACE94D319E807D6004488EB /* ROPagination.h */,
+				9ACE94D419E807D6004488EB /* RORSSDatasource.h */,
+				9ACE94D519E807D6004488EB /* RORSSDatasource.m */,
+				9ACE94D619E807D6004488EB /* ROYoutubeDatasource.h */,
+				9ACE94D719E807D6004488EB /* ROYoutubeDatasource.m */,
+				571B1F551B14BB6F008591AD /* ROAppNowDatasource.h */,
+				571B1F561B14BB6F008591AD /* ROAppNowDatasource.m */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		9ACE94D819E807D6004488EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE94D919E807D6004488EB /* Feed */,
+				9ACE94E219E807D6004488EB /* ROItemCell.h */,
+				9ACE94E319E807D6004488EB /* ROItemCell.m */,
+				9ACE94E419E807D6004488EB /* ROObject.h */,
+				9ACE94E519E807D6004488EB /* ROObject.m */,
+				9ACE94E619E807D6004488EB /* ROPage.h */,
+				9ACE94E719E807D6004488EB /* ROPage.m */,
+				9ACE94E819E807D6004488EB /* ROWebContent.h */,
+				9ACE94E919E807D6004488EB /* ROWebContent.m */,
+				5715189B1B0F47BF003F242E /* ROModel.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9ACE94D919E807D6004488EB /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE94DA19E807D6004488EB /* ROFeed.h */,
+				9ACE94DB19E807D6004488EB /* ROFeed.m */,
+				9ACE94DC19E807D6004488EB /* ROFeedImage.h */,
+				9ACE94DD19E807D6004488EB /* ROFeedImage.m */,
+				9ACE94DE19E807D6004488EB /* ROFeedItem.h */,
+				9ACE94DF19E807D6004488EB /* ROFeedItem.m */,
+				9ACE94E019E807D6004488EB /* ROFeedItemAuthor.h */,
+				9ACE94E119E807D6004488EB /* ROFeedItemAuthor.m */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		9ACE94EB19E807D6004488EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57EC71DB1A9DE176003D5850 /* ROQuizViewController.xib */,
+				57EC71DC1A9DE176003D5850 /* ROQuizScoreViewController.xib */,
+				571F44AE1A8B68FA00A538B3 /* ROOptionsViewController.xib */,
+				9ACE94EE19E807D6004488EB /* ROHeaderTableViewCell.xib */,
+				9ACE94EF19E807D6004488EB /* ROKillSwitchViewController.xib */,
+				9ACE94F019E807D6004488EB /* ROLoginViewController.xib */,
+				9ACE94F219E807D6004488EB /* ROTableViewCellStyleDetailImage.xib */,
+				9ACE94F319E807D6004488EB /* ROTableViewCellStyleDetailText.xib */,
+				9ACE94F419E807D6004488EB /* ROTableViewCellStylePhotoTitle.xib */,
+				9ACE94F519E807D6004488EB /* ROTableViewCellStylePhotoTitleBottomDescription.xib */,
+				9ACE94F619E807D6004488EB /* ROTableViewCellStylePhotoTitleDescription.xib */,
+				9ACE94F719E807D6004488EB /* ROTableViewCellStyleTitle.xib */,
+				9ACE94F819E807D6004488EB /* ROTableViewCellStyleTitleDescription.xib */,
+				57A6A64A1A8E206B00663FA3 /* ROFormViewController.xib */,
+				57B92F671AA4691D005EB86C /* ROCollectionViewCellStylePhoto.xib */,
+				57B92F691AA46AAC005EB86C /* ROCollectionViewCellStylePhotoTitle.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9ACE94FB19E807D6004488EB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5762FB5A1AC1B9E700D50199 /* Error */,
+				9ACE94FC19E807D6004488EB /* Cache */,
+				9ACE94FF19E807D6004488EB /* Categories */,
+				9ACE950C19E807D6004488EB /* Parsers */,
+				9ACE951419E807D6004488EB /* Style */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9ACE94FC19E807D6004488EB /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE94FD19E807D6004488EB /* ROCache.h */,
+				9ACE94FE19E807D6004488EB /* ROCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		9ACE94FF19E807D6004488EB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				57822E971B07841500C8F26E /* UILabel+RO.h */,
+				57822E981B07841500C8F26E /* UILabel+RO.m */,
+				57822E801B0606B300C8F26E /* UIFont+RO.h */,
+				57822E811B0606B300C8F26E /* UIFont+RO.m */,
+				9ACE950019E807D6004488EB /* NSArray+RO.h */,
+				9ACE950119E807D6004488EB /* NSArray+RO.m */,
+				9ACE950219E807D6004488EB /* NSDate+RO.h */,
+				9ACE950319E807D6004488EB /* NSDate+RO.m */,
+				9ACE950419E807D6004488EB /* NSDecimalNumber+RO.h */,
+				9ACE950519E807D6004488EB /* NSDecimalNumber+RO.m */,
+				9ACE950619E807D6004488EB /* NSString+RO.h */,
+				9ACE950719E807D6004488EB /* NSString+RO.m */,
+				9ACE950819E807D6004488EB /* UIAlertView+RO.h */,
+				9ACE950919E807D6004488EB /* UIAlertView+RO.m */,
+				9ACE950A19E807D6004488EB /* UIView+RO.h */,
+				9ACE950B19E807D6004488EB /* UIView+RO.m */,
+				577A4FFA19EA829700E7A638 /* NSBundle+RO.h */,
+				577A4FFB19EA829700E7A638 /* NSBundle+RO.m */,
+				577A4FFE19EA84F300E7A638 /* UIImage+RO.h */,
+				577A4FFF19EA84F300E7A638 /* UIImage+RO.m */,
+				57D9F4FD1A9F8510001CBDB3 /* UIImageView+RO.h */,
+				57D9F4FE1A9F8510001CBDB3 /* UIImageView+RO.m */,
+				57D9F5011A9F8846001CBDB3 /* UIColor+RO.h */,
+				57D9F5021A9F8846001CBDB3 /* UIColor+RO.m */,
+				573410FE1AC1E36D009F3888 /* UITableViewCell+RO.h */,
+				573410FF1AC1E36D009F3888 /* UITableViewCell+RO.m */,
+				5715188D1B0F4750003F242E /* NSDictionary+RO.h */,
+				5715188E1B0F4750003F242E /* NSDictionary+RO.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		9ACE950C19E807D6004488EB /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE950D19E807D6004488EB /* ROFeedBaseParser.h */,
+				9ACE950E19E807D6004488EB /* ROFeedBaseParser.m */,
+				9ACE950F19E807D6004488EB /* ROFeedParser.h */,
+				9ACE951019E807D6004488EB /* ROFeedParser.m */,
+				9ACE951119E807D6004488EB /* RORSSDictionaryParser.h */,
+				9ACE951219E807D6004488EB /* RORSSDictionaryParser.m */,
+				9ACE951319E807D6004488EB /* RORSSNameSpace.h */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		9ACE951419E807D6004488EB /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				57822E9A1B07847200C8F26E /* ROTextStyle.h */,
+				57822E9B1B07847200C8F26E /* ROTextStyle.m */,
+				9ACE951519E807D6004488EB /* ROStyle.h */,
+				9ACE951619E807D6004488EB /* ROStyle.m */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		9ACE951719E807D6004488EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE951819E807D6004488EB /* Cells */,
+				9ACE952619E807D6004488EB /* Charts */,
+				9ACE952B19E807D6004488EB /* ROLabel.h */,
+				9ACE952C19E807D6004488EB /* ROLabel.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9ACE951819E807D6004488EB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				571521A11AC7F969009F6118 /* CellDescriptors */,
+				9ACE951919E807D6004488EB /* ROCellConstants.h */,
+				9ACE951A19E807D6004488EB /* ROCollectionViewCell.h */,
+				9ACE951B19E807D6004488EB /* ROCollectionViewCell.m */,
+				9ACE951C19E807D6004488EB /* ROHeaderTableViewCell.h */,
+				9ACE951D19E807D6004488EB /* ROHeaderTableViewCell.m */,
+				9ACE951E19E807D6004488EB /* ROImageTableViewCell.h */,
+				9ACE951F19E807D6004488EB /* ROImageTableViewCell.m */,
+				9ACE952219E807D6004488EB /* ROTableViewCell.h */,
+				9ACE952319E807D6004488EB /* ROTableViewCell.m */,
+				9ACE952419E807D6004488EB /* ROTextTableViewCell.h */,
+				9ACE952519E807D6004488EB /* ROTextTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9ACE952619E807D6004488EB /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE952719E807D6004488EB /* ROChartSerie.h */,
+				9ACE952819E807D6004488EB /* ROChartSerie.m */,
+				9ACE952919E807D6004488EB /* ROChartView.h */,
+				9ACE952A19E807D6004488EB /* ROChartView.m */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		9ACE966519E80D11004488EB /* RadarcOnlineSDKResources */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE966619E80D11004488EB /* Supporting Files */,
+			);
+			path = RadarcOnlineSDKResources;
+			sourceTree = "<group>";
+		};
+		9ACE966619E80D11004488EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE966719E80D11004488EB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B24FF6485FAC2C60856BE571 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57353EAB1AA32E540031BA1E /* UIKit.framework */,
+				57A6A6511A9131A300663FA3 /* libPods-RadarcOnlineSDK-ActionSheetPicker-3.0.a */,
+				9ACE943619E80690004488EB /* libPods-RadarcOnlineSDK-AFNetworking.a */,
+				9ACE943719E80690004488EB /* libPods-RadarcOnlineSDK-CocoaSecurity.a */,
+				9ACE943819E80690004488EB /* libPods-RadarcOnlineSDK-Colours.a */,
+				9ACE943919E80690004488EB /* libPods-RadarcOnlineSDK-CorePlot.a */,
+				9ACE943A19E80690004488EB /* libPods-RadarcOnlineSDK-DCKeyValueObjectMapping.a */,
+				9ACE943D19E80690004488EB /* libPods-RadarcOnlineSDK-ECSlidingViewController.a */,
+				9ACE944019E80690004488EB /* libPods-RadarcOnlineSDK-NSUserDefaults-AESEncryptor.a */,
+				9ACE944119E80690004488EB /* libPods-RadarcOnlineSDK-SDWebImage.a */,
+				9ACE944219E80690004488EB /* libPods-RadarcOnlineSDK-SVProgressHUD.a */,
+				9ACE944319E80690004488EB /* libPods-RadarcOnlineSDK-SVPullToRefresh.a */,
+				9ACE944419E80690004488EB /* libPods-RadarcOnlineSDK-UIActivityIndicator-for-SDWebImage.a */,
+				9ACE944619E80690004488EB /* libPods-RadarcOnlineSDK-XMLDictionary.a */,
+				25A9CC1FBE22D4CCCA3FB6C0 /* libPods-RadarcOnlineSDK.a */,
+				D5D417BDD437E3D3DF7390F2 /* libPods-RadarcOnlineSDKTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A29DF9919E7DE76003C745D /* RadarcOnlineSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A29DFAB19E7DE76003C745D /* Build configuration list for PBXNativeTarget "RadarcOnlineSDK" */;
+			buildPhases = (
+				4E67A236BC5EE7103B2A0044 /* Check Pods Manifest.lock */,
+				9A29DF9619E7DE76003C745D /* Sources */,
+				9A29DF9719E7DE76003C745D /* Frameworks */,
+				9A29DF9819E7DE76003C745D /* CopyFiles */,
+				4D359A699CF36A2ABA3128E1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57C40DCB19EB3C5400379FB3 /* PBXTargetDependency */,
+				9A2C5EAD19E7EDFC00D723E1 /* PBXTargetDependency */,
+			);
+			name = RadarcOnlineSDK;
+			productName = RadarcOnlineSDK;
+			productReference = 9A29DF9A19E7DE76003C745D /* libRadarcOnlineSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9ACE966319E80D11004488EB /* RadarcOnlineSDKResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ACE966819E80D11004488EB /* Build configuration list for PBXNativeTarget "RadarcOnlineSDKResources" */;
+			buildPhases = (
+				9ACE966019E80D11004488EB /* Sources */,
+				9ACE966119E80D11004488EB /* Frameworks */,
+				9ACE966219E80D11004488EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RadarcOnlineSDKResources;
+			productName = RadarcOnlineSDKResources;
+			productReference = 9ACE966419E80D11004488EB /* RadarcOnlineSDKResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A29DF9219E7DE76003C745D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Icinetic S.L.";
+				TargetAttributes = {
+					9A29DF9919E7DE76003C745D = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					9A2C5EA719E7EDD900D723E1 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					9A2C5EAE19E7F02400D723E1 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					9ACE966319E80D11004488EB = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 9A29DF9519E7DE76003C745D /* Build configuration list for PBXProject "RadarcOnlineSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9A29DF9119E7DE76003C745D;
+			productRefGroup = 9A29DF9B19E7DE76003C745D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A29DF9919E7DE76003C745D /* RadarcOnlineSDK */,
+				9A2C5EA719E7EDD900D723E1 /* Headers */,
+				9ACE966319E80D11004488EB /* RadarcOnlineSDKResources */,
+				9A2C5EAE19E7F02400D723E1 /* BuildLibrary */,
+				9AF572D919ED336E007EDD76 /* BuildLibraryDebug */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9ACE966219E80D11004488EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A6A64C1A8E22D100663FA3 /* ROFormViewController.xib in Resources */,
+				571F44BA1A8B73CC00A538B3 /* ROOptionsViewController.xib in Resources */,
+				571F44B61A8B73C000A538B3 /* filter.png in Resources */,
+				571F44B71A8B73C000A538B3 /* filter@2x.png in Resources */,
+				571F44B81A8B73C000A538B3 /* filterClear.png in Resources */,
+				571F44B91A8B73C000A538B3 /* filterClear@2x.png in Resources */,
+				9ACE967819E80D29004488EB /* arrow.png in Resources */,
+				9ACE967919E80D29004488EB /* arrow@2x.png in Resources */,
+				57EC71F11A9DE314003D5850 /* ROQuizViewController.xib in Resources */,
+				579835231A9DF0FB00BF55E9 /* crown.png in Resources */,
+				9ACE967A19E80D29004488EB /* arrow@3x.png in Resources */,
+				9ACE967B19E80D29004488EB /* email.png in Resources */,
+				9ACE967C19E80D29004488EB /* email@2x.png in Resources */,
+				9ACE967D19E80D29004488EB /* email@3x.png in Resources */,
+				579835241A9DF0FC00BF55E9 /* crown@2x.png in Resources */,
+				9ACE967E19E80D29004488EB /* location.png in Resources */,
+				9ACE967F19E80D29004488EB /* location@2x.png in Resources */,
+				9ACE968019E80D29004488EB /* location@3x.png in Resources */,
+				9ACE968119E80D29004488EB /* message.png in Resources */,
+				9ACE968219E80D29004488EB /* message@2x.png in Resources */,
+				9ACE968319E80D29004488EB /* message@3x.png in Resources */,
+				9ACE968419E80D29004488EB /* NavMenu.png in Resources */,
+				9ACE968519E80D29004488EB /* NavMenu@2x.png in Resources */,
+				9ACE968619E80D29004488EB /* NoPhoto.png in Resources */,
+				9ACE968719E80D29004488EB /* NoPhoto@2x.png in Resources */,
+				9ACE968819E80D29004488EB /* phone.png in Resources */,
+				9ACE968919E80D29004488EB /* phone@2x.png in Resources */,
+				9ACE968A19E80D29004488EB /* phone@3x.png in Resources */,
+				9ACE968B19E80D29004488EB /* PlaceHolder.png in Resources */,
+				9ACE968C19E80D29004488EB /* PlaceHolder@2x.png in Resources */,
+				9ACE968D19E80D29004488EB /* Playvideo.png in Resources */,
+				9ACE968E19E80D29004488EB /* Playvideo@2x.png in Resources */,
+				9ACE968F19E80D29004488EB /* radarconline.png in Resources */,
+				9ACE969019E80D29004488EB /* radarconline@2x.png in Resources */,
+				9ACE969119E80D29004488EB /* radarconline@3x.png in Resources */,
+				9ACE969219E80D29004488EB /* url.png in Resources */,
+				9ACE969319E80D29004488EB /* url@2x.png in Resources */,
+				57B92F681AA4691D005EB86C /* ROCollectionViewCellStylePhoto.xib in Resources */,
+				9ACE969419E80D29004488EB /* url@3x.png in Resources */,
+				57B92F6A1AA46AAC005EB86C /* ROCollectionViewCellStylePhotoTitle.xib in Resources */,
+				9ACE966D19E80D23004488EB /* ROHeaderTableViewCell.xib in Resources */,
+				9ACE966E19E80D23004488EB /* ROKillSwitchViewController.xib in Resources */,
+				9ACE966F19E80D23004488EB /* ROLoginViewController.xib in Resources */,
+				9ACE967119E80D23004488EB /* ROTableViewCellStyleDetailImage.xib in Resources */,
+				9ACE967219E80D23004488EB /* ROTableViewCellStyleDetailText.xib in Resources */,
+				9ACE967319E80D23004488EB /* ROTableViewCellStylePhotoTitle.xib in Resources */,
+				57EC71F21A9DE314003D5850 /* ROQuizScoreViewController.xib in Resources */,
+				9ACE967419E80D23004488EB /* ROTableViewCellStylePhotoTitleBottomDescription.xib in Resources */,
+				9ACE967519E80D23004488EB /* ROTableViewCellStylePhotoTitleDescription.xib in Resources */,
+				9ACE967619E80D23004488EB /* ROTableViewCellStyleTitle.xib in Resources */,
+				9ACE967719E80D23004488EB /* ROTableViewCellStyleTitleDescription.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D359A699CF36A2ABA3128E1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RadarcOnlineSDK/Pods-RadarcOnlineSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E67A236BC5EE7103B2A0044 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A2C5EAB19E7EDF100D723E1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Copy all pod headers\nif [ -d \"${TARGET_BUILD_DIR}/Headers\" ]; then\n  rm -R \"${TARGET_BUILD_DIR}/Headers\"\nfi\nfor pod in `ls -t ${SRCROOT}/Pods/Headers/Public`\ndo\nmkdir -p \"${TARGET_BUILD_DIR}/Headers/$pod\"\ncd ${SRCROOT}/Pods/Headers/Public/$pod\nfor header in `ls -t .`\ndo\ncp `readlink -n $header` \"${TARGET_BUILD_DIR}/Headers/$pod\"\ndone\ndone\n\n";
+		};
+		9A2C5EB419E7F03100D723E1 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Folders\nif [ -d \"${SRCROOT}/../IOSApp/RadarcOnlineSDK\" ]; then\n  rm -R \"${SRCROOT}/../IOSApp/RadarcOnlineSDK\"\nfi\nmkdir -p \"${SRCROOT}/../IOSApp/RadarcOnlineSDK/Resources\"\n\n# Build release library\nxcodebuild -workspace RadarcOnlineSDK.xcworkspace -scheme RadarcOnlineSDK -sdk iphonesimulator -configuration Release\nxcodebuild -workspace RadarcOnlineSDK.xcworkspace -scheme RadarcOnlineSDK -sdk iphoneos -configuration Release\n\n# Combine lib files for various platforms into one\nlipo -create \"${BUILD_DIR}/Release-iphoneos/libRadarcOnlineSDK.a\" \"${BUILD_DIR}/Release-iphonesimulator/libRadarcOnlineSDK.a\" -output \"${SRCROOT}/../IOSApp/RadarcOnlineSDK/libRadarcOnlineSDK-${CURRENT_PROJECT_VERSION}.a\"\n\n# Headers\ncd \"${BUILD_DIR}/Release-iphoneos/\"\ncp -R \"Headers\" \"${SRCROOT}/../IOSApp/RadarcOnlineSDK\"\n\n# Resources\ncp -R \"RadarcOnlineSDKResources.bundle\" \"${SRCROOT}/../IOSApp/RadarcOnlineSDK/Resources\"\ncp -R \"SVProgressHUD.bundle\" \"${SRCROOT}/../IOSApp/RadarcOnlineSDK/Resources\"\n";
+		};
+		9AF572DD19ED3372007EDD76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Folders\nif [ -d \"${SRCROOT}/../IOSApp/RadarcOnlineSDK\" ]; then\nrm -R \"${SRCROOT}/../IOSApp/RadarcOnlineSDK\"\nfi\nmkdir -p \"${SRCROOT}/../IOSApp/RadarcOnlineSDK/Resources\"\n\n# Build release library\nxcodebuild -workspace RadarcOnlineSDK.xcworkspace -scheme RadarcOnlineSDK -sdk iphonesimulator -configuration Debug\nxcodebuild -workspace RadarcOnlineSDK.xcworkspace -scheme RadarcOnlineSDK -sdk iphoneos -configuration Debug\n\n# Combine lib files for various platforms into one\nlipo -create \"${BUILD_DIR}/Debug-iphoneos/libRadarcOnlineSDK.a\" \"${BUILD_DIR}/Debug-iphonesimulator/libRadarcOnlineSDK.a\" -output \"${SRCROOT}/../IOSApp/RadarcOnlineSDK/libRadarcOnlineSDK-debug-${CURRENT_PROJECT_VERSION}.a\"\n\n# Headers\ncd \"${BUILD_DIR}/Debug-iphoneos/\"\ncp -R \"Headers\" \"${SRCROOT}/../IOSApp/RadarcOnlineSDK\"\n\n# Resources\ncp -R \"RadarcOnlineSDKResources.bundle\" \"${SRCROOT}/../IOSApp/RadarcOnlineSDK/Resources\"\ncp -R \"SVProgressHUD.bundle\" \"${SRCROOT}/../IOSApp/RadarcOnlineSDK/Resources\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A29DF9619E7DE76003C745D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACE958019E807D6004488EB /* RONavMenuSlidingTableViewController.m in Sources */,
+				9ACE959A19E807D6004488EB /* RORSSDatasource.m in Sources */,
+				57962A8E1AC93CD5005BE423 /* ROShareBehavior.m in Sources */,
+				9ACE957219E807D6004488EB /* RONavigationBasicController.m in Sources */,
+				9ACE95A219E807D6004488EB /* ROFeedItem.m in Sources */,
+				9ACE95C319E807D6004488EB /* NSDecimalNumber+RO.m in Sources */,
+				9ACE957C19E807D6004488EB /* RONavigationMainSlidingController.m in Sources */,
+				9ACE954319E807D6004488EB /* ROYoutubeAction.m in Sources */,
+				9ACE95D319E807D6004488EB /* ROCollectionViewCell.m in Sources */,
+				571B1F541B1496B3008591AD /* RORestClient.m in Sources */,
+				571521B61AC7FCA8009F6118 /* ROTableViewController.m in Sources */,
+				57A6A65A1A925D7900663FA3 /* ROFormFieldSelection.m in Sources */,
+				5715188F1B0F4750003F242E /* NSDictionary+RO.m in Sources */,
+				9ACE95C119E807D6004488EB /* NSDate+RO.m in Sources */,
+				57EC71C11A9DE13E003D5850 /* ROQuizItem.m in Sources */,
+				9ACE95A619E807D6004488EB /* ROItemCell.m in Sources */,
+				9ACE954119E807D6004488EB /* ROWebBrowserAction.m in Sources */,
+				9ACE95C919E807D6004488EB /* UIView+RO.m in Sources */,
+				571521BC1AC7FD00009F6118 /* ROChartViewController.m in Sources */,
+				9ACE953119E807D6004488EB /* ROMailAction.m in Sources */,
+				9ACE959019E807D6004488EB /* ROCollectionCloudDatasource.m in Sources */,
+				9ACE95A419E807D6004488EB /* ROFeedItemAuthor.m in Sources */,
+				9ACE959619E807D6004488EB /* ROHtmlDatasource.m in Sources */,
+				57822E991B07841500C8F26E /* UILabel+RO.m in Sources */,
+				571B1F571B14BB6F008591AD /* ROAppNowDatasource.m in Sources */,
+				9ACE95BD19E807D6004488EB /* ROCache.m in Sources */,
+				571521A91AC7F969009F6118 /* ROHeaderCellDescriptor.m in Sources */,
+				9ACE95E119E807D6004488EB /* ROChartView.m in Sources */,
+				571F44A71A8B681100A538B3 /* ROFormViewController.m in Sources */,
+				9ACE953F19E807D6004488EB /* ROUriAction.m in Sources */,
+				9ACE956C19E807D6004488EB /* ROBasicAuthLoginService.m in Sources */,
+				571521AB1AC7F969009F6118 /* ROTextCellDescriptor.m in Sources */,
+				9ACE95CF19E807D6004488EB /* RORSSDictionaryParser.m in Sources */,
+				57822E821B0606B400C8F26E /* UIFont+RO.m in Sources */,
+				9ACE95AC19E807D6004488EB /* ROWebContent.m in Sources */,
+				9ACE956E19E807D6004488EB /* ROLoginResponse.m in Sources */,
+				57822E9C1B07847200C8F26E /* ROTextStyle.m in Sources */,
+				9ACE953319E807D6004488EB /* ROMapAction.m in Sources */,
+				9ACE95DF19E807D6004488EB /* ROChartSerie.m in Sources */,
+				9ACE959819E807D6004488EB /* ROOptionsFilter.m in Sources */,
+				571F44A91A8B681100A538B3 /* ROOptionsViewController.m in Sources */,
+				9ACE957A19E807D6004488EB /* RONavigationViewController.m in Sources */,
+				57EC71D31A9DE158003D5850 /* ROQuizItemViewController.m in Sources */,
+				5762FB5F1AC1B9E700D50199 /* ROError.m in Sources */,
+				9ACE958619E807D6004488EB /* ROKillSwitchViewController.m in Sources */,
+				9ACE953519E807D6004488EB /* ROMapDirectionsAction.m in Sources */,
+				9ACE95D519E807D6004488EB /* ROHeaderTableViewCell.m in Sources */,
+				577A500019EA84F300E7A638 /* UIImage+RO.m in Sources */,
+				9ACE95C719E807D6004488EB /* UIAlertView+RO.m in Sources */,
+				9ACE95AA19E807D6004488EB /* ROPage.m in Sources */,
+				57D9F4FF1A9F8510001CBDB3 /* UIImageView+RO.m in Sources */,
+				573411001AC1E36D009F3888 /* UITableViewCell+RO.m in Sources */,
+				9A95D9C31A83999B000D53CF /* RODateRangeFilter.m in Sources */,
+				9ACE957E19E807D6004488EB /* RONavigationMenuSlidingController.m in Sources */,
+				9ACE95BF19E807D6004488EB /* NSArray+RO.m in Sources */,
+				57962A8D1AC93CD5005BE423 /* ROSearchBehavior.m in Sources */,
+				5762FB601AC1B9E700D50199 /* ROErrorManager.m in Sources */,
+				9ACE959E19E807D6004488EB /* ROFeed.m in Sources */,
+				9ACE958A19E807D6004488EB /* ROViewController.m in Sources */,
+				57EC71D91A9DE158003D5850 /* ROQuizScoreViewController.m in Sources */,
+				9ACE953B19E807D6004488EB /* ROPhoneAction.m in Sources */,
+				571521C11AC7FDB1009F6118 /* ROCollectionViewController.m in Sources */,
+				9ACE957019E807D6004488EB /* ROLoginViewController.m in Sources */,
+				9ACE958E19E807D6004488EB /* ROBingDatasource.m in Sources */,
+				57962A8B1AC93CD5005BE423 /* ROFilterBehavior.m in Sources */,
+				9ACE95DD19E807D6004488EB /* ROTextTableViewCell.m in Sources */,
+				57EC71C31A9DE13E003D5850 /* ROQuizQuestion.m in Sources */,
+				57EC71D71A9DE158003D5850 /* ROQuizNavigationController.m in Sources */,
+				9ACE959219E807D6004488EB /* ROCollectionLocalDatasource.m in Sources */,
+				5715219C1AC7F828009F6118 /* ROListDataLoader.m in Sources */,
+				9ACE95DB19E807D6004488EB /* ROTableViewCell.m in Sources */,
+				9ACE95E319E807D6004488EB /* ROLabel.m in Sources */,
+				9ACE959C19E807D6004488EB /* ROYoutubeDatasource.m in Sources */,
+				9ACE953D19E807D6004488EB /* ROSMSAction.m in Sources */,
+				9ACE952F19E807D6004488EB /* ROFacetimeAction.m in Sources */,
+				9ACE957419E807D6004488EB /* RONavMenuBasicTableViewController.m in Sources */,
+				9A95D9BF1A838AEA000D53CF /* ROStringListFilter.m in Sources */,
+				9ACE95CB19E807D6004488EB /* ROFeedBaseParser.m in Sources */,
+				5715219D1AC7F828009F6118 /* ROSingleDataLoader.m in Sources */,
+				9ACE95D719E807D6004488EB /* ROImageTableViewCell.m in Sources */,
+				9ACE95D119E807D6004488EB /* ROStyle.m in Sources */,
+				9ACE95C519E807D6004488EB /* NSString+RO.m in Sources */,
+				57962A8C1AC93CD5005BE423 /* RORefreshBehavior.m in Sources */,
+				9ACE958219E807D6004488EB /* ROBaseViewController.m in Sources */,
+				57A6A6561A924E6B00663FA3 /* ROFormFieldDateRange.m in Sources */,
+				9ACE953919E807D6004488EB /* RONavigationAction.m in Sources */,
+				577A4FFC19EA829700E7A638 /* NSBundle+RO.m in Sources */,
+				9ACE95A019E807D6004488EB /* ROFeedImage.m in Sources */,
+				57EC71C51A9DE13E003D5850 /* ROQuizAnswer.m in Sources */,
+				571521AA1AC7F969009F6118 /* ROImageCellDescriptor.m in Sources */,
+				571521B51AC7FCA8009F6118 /* ROCustomTableViewController.m in Sources */,
+				9ACE953719E807D6004488EB /* ROMapSearchAction.m in Sources */,
+				9ACE95A819E807D6004488EB /* ROObject.m in Sources */,
+				9ACE959419E807D6004488EB /* ROFlickrDatasource.m in Sources */,
+				57EC71D11A9DE158003D5850 /* ROQuizViewController.m in Sources */,
+				57EC71BF1A9DE13E003D5850 /* ROQuiz.m in Sources */,
+				57D9F5031A9F8846001CBDB3 /* UIColor+RO.m in Sources */,
+				9ACE95BB19E807D6004488EB /* ROAppDelegate.m in Sources */,
+				57EC71D51A9DE158003D5850 /* ROQuizStyle.m in Sources */,
+				9ACE95CD19E807D6004488EB /* ROFeedParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACE966019E80D11004488EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57C40DCB19EB3C5400379FB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACE966319E80D11004488EB /* RadarcOnlineSDKResources */;
+			targetProxy = 57C40DCA19EB3C5400379FB3 /* PBXContainerItemProxy */;
+		};
+		9A2C5EAD19E7EDFC00D723E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A2C5EA719E7EDD900D723E1 /* Headers */;
+			targetProxy = 9A2C5EAC19E7EDFC00D723E1 /* PBXContainerItemProxy */;
+		};
+		9A2C5EB319E7F02D00D723E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A2C5EA719E7EDD900D723E1 /* Headers */;
+			targetProxy = 9A2C5EB219E7F02D00D723E1 /* PBXContainerItemProxy */;
+		};
+		9ACE969619E80D33004488EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACE966319E80D11004488EB /* RadarcOnlineSDKResources */;
+			targetProxy = 9ACE969519E80D33004488EB /* PBXContainerItemProxy */;
+		};
+		9AF572DF19ED337B007EDD76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A2C5EA719E7EDD900D723E1 /* Headers */;
+			targetProxy = 9AF572DE19ED337B007EDD76 /* PBXContainerItemProxy */;
+		};
+		9AF572E119ED337B007EDD76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACE966319E80D11004488EB /* RadarcOnlineSDKResources */;
+			targetProxy = 9AF572E019ED337B007EDD76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9A29DFA919E7DE76003C745D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RadarcOnlineSDK/PrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9A29DFAA19E7DE76003C745D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RadarcOnlineSDK/PrefixHeader.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A29DFAC19E7DE76003C745D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CEF1BEB725DBFC911BEE13C /* Pods-RadarcOnlineSDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_MODULES_AUTOLINK = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphoneos",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9A29DFAD19E7DE76003C745D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DA5546CE057C99082796CED /* Pods-RadarcOnlineSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_MODULES_AUTOLINK = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9A2C5EA919E7EDD900D723E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9A2C5EAA19E7EDD900D723E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9A2C5EAF19E7F02400D723E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1.6.4;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9A2C5EB019E7F02400D723E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1.6.4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9ACE966919E80D11004488EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RadarcOnlineSDKResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9ACE966A19E80D11004488EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = RadarcOnlineSDKResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		9AF572DB19ED336E007EDD76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1.6.4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9AF572DC19ED336E007EDD76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1.6.4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A29DF9519E7DE76003C745D /* Build configuration list for PBXProject "RadarcOnlineSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A29DFA919E7DE76003C745D /* Debug */,
+				9A29DFAA19E7DE76003C745D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A29DFAB19E7DE76003C745D /* Build configuration list for PBXNativeTarget "RadarcOnlineSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A29DFAC19E7DE76003C745D /* Debug */,
+				9A29DFAD19E7DE76003C745D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A2C5EA819E7EDD900D723E1 /* Build configuration list for PBXAggregateTarget "Headers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2C5EA919E7EDD900D723E1 /* Debug */,
+				9A2C5EAA19E7EDD900D723E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A2C5EB119E7F02400D723E1 /* Build configuration list for PBXAggregateTarget "BuildLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2C5EAF19E7F02400D723E1 /* Debug */,
+				9A2C5EB019E7F02400D723E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ACE966819E80D11004488EB /* Build configuration list for PBXNativeTarget "RadarcOnlineSDKResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACE966919E80D11004488EB /* Debug */,
+				9ACE966A19E80D11004488EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AF572DA19ED336E007EDD76 /* Build configuration list for PBXAggregateTarget "BuildLibraryDebug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AF572DB19ED336E007EDD76 /* Debug */,
+				9AF572DC19ED336E007EDD76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A29DF9219E7DE76003C745D /* Project object */;
+}

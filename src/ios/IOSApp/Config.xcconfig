@@ -1,0 +1,1 @@
+OTHER_LDFLAGS = -ObjC -l"xml2" -framework "CoreGraphics" -framework "CoreText" -framework "ImageIO" -framework "MediaPlayer" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"

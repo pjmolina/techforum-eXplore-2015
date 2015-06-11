@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="5100" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ROTableViewCellPhotoTitleBottomDescription" rowHeight="128" id="yOg-45-Na5" customClass="ROTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yOg-45-Na5" id="Hz0-Az-RS8">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mef-Bc-and">
+                        <rect key="frame" x="8" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="2Lt-hb-CFs"/>
+                            <constraint firstAttribute="height" constant="44" id="VPz-2R-XIB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="252" placeholderIntrinsicHeight="44" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="252" translatesAutoresizingMaskIntoConstraints="NO" id="iXC-ay-g7h">
+                        <rect key="frame" x="60" y="8" width="252" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </string>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="64" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="304" translatesAutoresizingMaskIntoConstraints="NO" id="0rs-iD-PbU">
+                        <rect key="frame" x="8" y="55" width="304" height="64"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </string>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="iXC-ay-g7h" secondAttribute="trailing" constant="8" id="4FI-s8-Bhw"/>
+                    <constraint firstItem="iXC-ay-g7h" firstAttribute="trailing" secondItem="0rs-iD-PbU" secondAttribute="trailing" id="EpA-ng-frD"/>
+                    <constraint firstItem="0rs-iD-PbU" firstAttribute="top" secondItem="Mef-Bc-and" secondAttribute="bottom" constant="3" id="Myw-nN-NZk"/>
+                    <constraint firstItem="Mef-Bc-and" firstAttribute="leading" secondItem="Hz0-Az-RS8" secondAttribute="leading" constant="8" id="T4K-yR-ZFn"/>
+                    <constraint firstAttribute="bottom" secondItem="0rs-iD-PbU" secondAttribute="bottom" constant="8" id="ZLQ-ww-jLF"/>
+                    <constraint firstItem="Mef-Bc-and" firstAttribute="bottom" secondItem="iXC-ay-g7h" secondAttribute="bottom" id="gaj-jT-hRr"/>
+                    <constraint firstItem="0rs-iD-PbU" firstAttribute="leading" secondItem="Mef-Bc-and" secondAttribute="leading" id="hfY-J7-Rfo"/>
+                    <constraint firstItem="iXC-ay-g7h" firstAttribute="leading" secondItem="Mef-Bc-and" secondAttribute="trailing" constant="8" symbolic="YES" id="lsC-I1-dgT"/>
+                    <constraint firstAttribute="trailing" secondItem="0rs-iD-PbU" secondAttribute="trailing" constant="8" id="nhz-2o-eXi"/>
+                    <constraint firstItem="iXC-ay-g7h" firstAttribute="top" secondItem="Mef-Bc-and" secondAttribute="top" id="qHK-x2-02Z"/>
+                    <constraint firstItem="Mef-Bc-and" firstAttribute="top" secondItem="Hz0-Az-RS8" secondAttribute="top" constant="8" id="udT-UM-I3H"/>
+                    <constraint firstItem="0rs-iD-PbU" firstAttribute="centerX" secondItem="Hz0-Az-RS8" secondAttribute="centerX" id="xUG-4P-zyB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageView1" destination="Mef-Bc-and" id="2fb-x0-2N0"/>
+                <outlet property="text1Label" destination="iXC-ay-g7h" id="xii-hc-CrO"/>
+                <outlet property="text2Label" destination="0rs-iD-PbU" id="UZS-kh-eMp"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

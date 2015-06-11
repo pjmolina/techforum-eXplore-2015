@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="5100" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ROTableViewCellPhotoTitle" rowHeight="60" id="gVG-aj-peu" customClass="ROTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gVG-aj-peu" id="ZJ7-3z-3gt">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vxt-WY-5mL">
+                        <rect key="frame" x="8" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="dzb-n9-Q63"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="252" translatesAutoresizingMaskIntoConstraints="NO" id="wVW-Xa-0iF">
+                        <rect key="frame" x="60" y="8" width="252" height="43"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wVW-Xa-0iF" firstAttribute="leading" secondItem="Vxt-WY-5mL" secondAttribute="trailing" constant="8" symbolic="YES" id="FqN-wj-aFo"/>
+                    <constraint firstItem="wVW-Xa-0iF" firstAttribute="top" secondItem="Vxt-WY-5mL" secondAttribute="top" id="IDs-aq-UKB"/>
+                    <constraint firstAttribute="trailing" secondItem="wVW-Xa-0iF" secondAttribute="trailing" constant="8" id="UTZ-TC-plh"/>
+                    <constraint firstItem="Vxt-WY-5mL" firstAttribute="leading" secondItem="ZJ7-3z-3gt" secondAttribute="leading" constant="8" id="YhJ-ah-G6b"/>
+                    <constraint firstItem="wVW-Xa-0iF" firstAttribute="centerY" secondItem="ZJ7-3z-3gt" secondAttribute="centerY" id="jCe-zX-rEu"/>
+                    <constraint firstItem="Vxt-WY-5mL" firstAttribute="top" secondItem="ZJ7-3z-3gt" secondAttribute="top" constant="8" id="vMH-YF-XLR"/>
+                    <constraint firstAttribute="bottom" secondItem="Vxt-WY-5mL" secondAttribute="bottom" constant="7" id="vfs-Gz-2fL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageView1" destination="Vxt-WY-5mL" id="hRJ-Dg-yz3"/>
+                <outlet property="text1Label" destination="wVW-Xa-0iF" id="KqO-6V-fIX"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
