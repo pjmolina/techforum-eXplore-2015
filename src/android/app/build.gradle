@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        minSdkVersion Integer.parseInt(project.ANDROID_MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
+        versionCode Integer.parseInt(project.VERSION_CODE)
+        versionName project.VERSION_NAME
+    }
+
+    signingConfigs{
+        debug{
+            storeFile file("debug.keystore")
+        }
+    }
+
+    buildTypes {
+        release {
+            // write here your signing config, proguard configuration, etc
+            // minifyEnabled true
+            // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    // This is used for renaming the output apk
+    // comment this code if you don't want it
+    applicationVariants.all { variant ->
+        def versionCode = project.VERSION_CODE
+
+        variant.outputs.each { output ->
+            def file = output.outputFile
+            if(file != null && file.name.endsWith('.apk')) {
+                def newName = "${project.GROUP}-${versionCode}-${variant.name}.apk";
+                String outputDir = project.hasProperty('outDir') ? outDir : file.parent;
+                output.outputFile = new File(outputDir, newName)
+            }
+        }
+    }
+
+    packagingOptions {
+        // avoid conflicts in the packaging process
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude '.readme'
+    }
+
+    productFlavors {
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile(name:'appworks-fw', ext:'aar')
+
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:gridlayout-v7:21.0.3'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:cardview-v7:21.0.3'
+
+    // transitive dependencies are not pulled from local .aar, so we must include all of them:
+    compile 'com.squareup:otto:1.3.5@jar'
+    compile 'com.squareup.retrofit:retrofit:1.6.0'
+    compile 'com.squareup.picasso:picasso:2.3.4'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+    compile 'com.doomonafireball.betterpickers:library:1.5.3'
+}

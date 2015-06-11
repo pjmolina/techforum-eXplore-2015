@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2015.
+  ~ This code is part of http://www.radarconline.com , the Bright Enterprise App Builder.
+  ~ Created by Icinetic S.L.
+  -->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+        android:src="@drawable/tabs_pattern"
+        android:tileMode="repeat"/>

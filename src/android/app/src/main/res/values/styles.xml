@@ -1,0 +1,81 @@
+<!-- This App has been generated using http://www.radarconline.com , the Bright Enterprise App Builder -->
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+
+        <!-- toolbar -->
+        <item name="colorPrimary">@color/actionbar_background</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="android:textColorPrimary">@color/textBarColor</item>      
+
+        <!-- colors -->
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:textColorTertiary">@color/textColorTertiary</item>
+        <item name="android:textColorHint">@color/textColorSecondary</item>
+
+    </style>    
+ 
+    <!-- app theme (default version) -->
+    <style name="AppTheme" parent="AppBaseTheme">
+    </style>
+
+    <!-- labels in detail screens -->
+     <style name="LabelTextStyle">
+        <item name="android:minHeight">36dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+    <style name="Offices_title">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="Offices_subtitle">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="OfficesDetail_view0">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="OfficesDetail_view1">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="OfficesDetail_view2">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="OfficesDetail_view3">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="OfficesDetail_view4">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="Countries_title">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="CountriesDetail_view0">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="Solutions_title">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="Solutions_subtitle">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="SolutionsDetail_view0">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+</resources>

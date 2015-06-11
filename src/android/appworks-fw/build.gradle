@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionCode 6
+        versionName "1.2.4"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.squareup:otto:1.3.5@jar'
+    compile 'com.squareup.retrofit:retrofit:1.6.0'
+    compile 'com.squareup.picasso:picasso:2.3.4'
+    compile 'com.doomonafireball.betterpickers:library:1.5.3'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+android.libraryVariants.all { variant ->
+
+    def varName = variant.name.capitalize()
+
+    task("copy${varName}Deps", type: Copy, dependsOn: "assemble${varName}") {
+        // Set out dir
+        def outProj = project.parent.subprojects.find { it.name == 'app' }
+        variant.outputs.each { output ->
+            def file = output.outputFile
+            if (file != null && file.name.endsWith(".aar")) {
+                from file
+                into new File(outProj.projectDir, 'libs')
+                def destName = file.name.replace("-release", "")
+                rename file.name, destName
+            }
+        }
+    }
+}

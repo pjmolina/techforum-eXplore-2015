@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.radarc.explore101" >
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication">
+
+        <activity android:name="com.radarc.explore101.ui.EXplore101Main"
+            android:label="@string/eXplore101Main"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.radarc.explore101.ui.OfficesActivity"
+            android:label="@string/officesActivity"
+            >
+        </activity>
+
+        <activity android:name="com.radarc.explore101.ui.OfficesDetailActivity"
+            >
+        </activity>
+
+        <activity android:name="com.radarc.explore101.ui.CountriesActivity"
+            android:label="@string/countriesActivity"
+            >
+        </activity>
+
+        <activity android:name="com.radarc.explore101.ui.CountriesDetailActivity"
+            >
+        </activity>
+
+        <activity android:name="com.radarc.explore101.ui.SolutionsActivity"
+            android:label="@string/solutionsActivity"
+            >
+        </activity>
+
+        <activity android:name="com.radarc.explore101.ui.SolutionsDetailActivity"
+            >
+        </activity>
+
+       
+    </application>
+
+</manifest>

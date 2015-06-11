@@ -1,0 +1,27 @@
+<!-- This App has been generated using http://www.radarconline.com , the Bright Enterprise App Builder -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="8dp"
+>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        style="@style/Solutions_title"
+    >
+    </TextView>
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        style="@style/Solutions_subtitle"
+    >
+    </TextView>
+</RelativeLayout>

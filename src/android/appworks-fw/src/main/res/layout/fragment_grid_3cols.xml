@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015.
+  ~ This code is part of http://www.radarconline.com , the Bright Enterprise App Builder.
+  ~ Created by Icinetic S.L.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout android:id="@+id/progressContainer"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:visibility="gone"
+                  android:gravity="center">
+
+        <ProgressBar style="?android:attr/progressBarStyleLarge"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <FrameLayout android:id="@+id/listContainer"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+        <GridView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="@integer/grid_columns_3"
+                android:verticalSpacing="@dimen/grid_margin"
+                android:horizontalSpacing="@dimen/grid_margin"
+                android:scrollbarStyle="outsideOverlay"
+                android:padding="@dimen/activity_margin"
+                android:clipToPadding="false"
+                android:drawSelectorOnTop="true"/>
+
+        <TextView
+                android:id="@android:id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+    </FrameLayout>
+
+</FrameLayout>

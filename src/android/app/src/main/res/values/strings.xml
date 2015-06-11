@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This App has been generated using http://www.radarconline.com , the Bright Enterprise App Builder -->
+<resources>
+
+    <string name="app_name">eXplore101</string>
+
+    <!-- Activity Titles -->
+    <string formatted="false" name="eXplore101Main">eXplore101</string>
+    <string formatted="false" name="officesActivity">offices</string>
+    <string formatted="false" name="countriesActivity">countries</string>
+    <string formatted="false" name="solutionsActivity">solutions</string>
+    <!-- Url for Radarc-hosted dynamic data. Don't change this unless you need to -->
+    <string name="dynamic_url">https://www.radarconline.com/api/app/data/</string>
+    <string name="api_key">kLpGwZLnmK4GByu049aCQpZ558vOw5L8Mrwa37PoPy</string>
+    <string name="app_id">290923c0-8d19-40c9-b0c6-a0169102556e</string>
+</resources>
+

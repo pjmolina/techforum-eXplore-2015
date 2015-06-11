@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015.
+  ~ This code is part of http://www.radarconline.com , the Bright Enterprise App Builder.
+  ~ Created by Icinetic S.L.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+    <TextView android:id="@+id/title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:maxLines="2"
+              android:ellipsize="end"/>
+
+    <TextView android:id="@+id/subtitle"
+              android:layout_below="@id/title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:maxLines="2"
+              android:ellipsize="end"/>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015.
+  ~ This code is part of http://www.radarconline.com , the Bright Enterprise App Builder.
+  ~ Created by Icinetic S.L.
+  -->
+
+<resources>
+    <attr name="label" format="string" localization="suggested"/>
+
+    <declare-styleable name="DateRangePicker">
+        <attr name="label"/>
+    </declare-styleable>
+
+    <declare-styleable name="ListSelectionPicker">
+        <attr name="label"/>
+    </declare-styleable>
+
+</resources>

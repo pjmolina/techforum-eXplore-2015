@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2015.
+  ~ This code is part of http://www.radarconline.com , the Bright Enterprise App Builder.
+  ~ Created by Icinetic S.L.
+  -->
+<resources>
+
+    <string name="app_name">AppWorks Android framework</string>
+    <string name="drawer_open">Open main menu</string>
+    <string name="drawer_close">Close main menu</string>
+    <string name="drawer_title">Select a section</string>
+    <string name="detail">Detail</string>
+    <string name="loading">loading</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="share">Share</string>
+    <string name="send_email">Send Email</string>
+    <string name="call">Call with</string>
+    <string name="playsong">Play Song</string>
+    <string name="open_url">Open Link</string>
+    <string name="search_title">Search</string>
+    <string name="find_on_map">Find On Map</string>
+    <string name="selectOneItem">Select one item</string>
+    <string name="loading_message">Loading...</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+
+    <!-- Error strings -->
+    <string name="error_data_generic">There was a problem retrieving data</string>
+    <string name="error_data_unauthorized">Authorization Required</string>
+    <string name="error_invalid_email">This field is invalid</string>
+    <string name="error_incorrect_password">This field is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_login">Invalid Email or Password</string>
+    <string name="error_network_unavailable">No Internet Connection Available</string>
+    <string name="filter">Filter</string>
+    <string name="reset">Reset</string>
+    <string name="minimum_date">From: select start date</string>
+    <string name="maximum_date">To: select end date</string>
+    <string name="select">Select</string>
+    <string name="datemin_filter_format">From: %1$s</string>
+    <string name="datemax_filter_format">To: %1$s</string>
+
+</resources>

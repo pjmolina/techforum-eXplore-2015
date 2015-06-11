@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015.
+  ~ This code is part of http://www.radarconline.com , the Bright Enterprise App Builder.
+  ~ Created by Icinetic S.L.
+  -->
+
+<resources>
+
+    <!--
+        Generate an id for view containers
+    -->
+    <item name="progressContainer" type="id"/>
+    <item name="contentContainer" type="id"/>
+
+    <item name="action_refresh" type="id"/>
+</resources>

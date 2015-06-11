@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015.
+  ~ This code is part of http://www.radarconline.com , the Bright Enterprise App Builder.
+  ~ Created by Icinetic S.L.
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="4dp">
+
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView android:id="@+id/image"
+                   android:layout_width="match_parent"
+                   android:layout_height="280dp"
+                   android:contentDescription="@string/app_name"
+                   android:scaleType="centerCrop"
+                   android:layout_gravity="center"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/appworks_logo"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_alignBottom="@+id/image">
+
+            <TextView android:id="@+id/title"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceLarge"
+                      android:padding="4dp"
+                    />
+
+            <TextView android:id="@+id/subtitle"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceSmall"
+                      android:padding="4dp"
+                    />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

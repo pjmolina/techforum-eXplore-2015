@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2015.
+  ~ This code is part of http://www.radarconline.com , the Bright Enterprise App Builder.
+  ~ Created by Icinetic S.L.
+  -->
+
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@android:id/text1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:minHeight="?android:attr/listPreferredItemHeight"
+                 android:textAppearance="?android:attr/textAppearanceLarge"
+                 android:textColor="?android:attr/textColorAlertDialogListItem"
+                 android:gravity="center_vertical"
+                 android:paddingLeft="12dip"
+                 android:paddingRight="7dip"
+                 android:checkMark="?android:attr/listChoiceIndicatorSingle"
+                 android:ellipsize="marquee"
+        />

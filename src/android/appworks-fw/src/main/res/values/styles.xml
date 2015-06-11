@@ -1,0 +1,30 @@
+<!--
+  ~ Copyright (c) 2015.
+  ~ This code is part of http://www.radarconline.com , the Bright Enterprise App Builder.
+  ~ Created by Icinetic S.L.
+  -->
+
+<resources>
+    <style name="ToolbarOverlayTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+    </style>
+
+    <!-- filter items -->
+    <style name="FilterItemStyle">
+        <item name="android:paddingLeft">@dimen/activity_margin_horizontal</item>
+        <item name="android:paddingRight">@dimen/activity_margin_horizontal</item>
+    </style>
+
+    <!-- fix background for dialog theme -->
+    <style name="SelectionDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/default_text_color_holo_light</item>
+    </style>
+    <style name="SelectionDialog.PreL">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+
+    <!-- base styles for the login form -->
+    <style name="SignInEditText">
+    </style>
+
+</resources>
